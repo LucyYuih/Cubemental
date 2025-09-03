@@ -1,9 +1,9 @@
 {
   "name": "Cubemental",
   "short_name": "Cubemental",
-  "id": "com.example.gamename",
+  "id": "com.cubemental.lucyyuih",
   "description": "",
-  "orientation": "any",
+  "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "black",

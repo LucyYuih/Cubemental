@@ -2385,6 +2385,29 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) == 21 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").add(0.5);
+}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
+}}
+
+}
+
+
 };gdjs.StoreCode.eventsList10 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList11 = function(runtimeScene) {

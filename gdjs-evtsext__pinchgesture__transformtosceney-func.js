@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__PinchGesture__TransformToSceneY !== "undefined") {
 gdjs.evtsExt__PinchGesture__TransformToSceneY = {};
 
 
-gdjs.evtsExt__PinchGesture__TransformToSceneY.userFunc0xb530f0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PinchGesture__TransformToSceneY.userFunc0xbb1f48 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const x = eventsFunctionContext.getArgument("PositionX");
 const y = eventsFunctionContext.getArgument("PositionY");
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__PinchGesture__TransformToSceneY.userFunc0xb530f0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PinchGesture__TransformToSceneY.userFunc0xbb1f48(runtimeScene, eventsFunctionContext);
 
 }
 

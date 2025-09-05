@@ -193,20 +193,6 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(7).getChild("moneytometal").getAsBoolean();
-}
-if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage_Other").setNumber(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
 {isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock").getAsBoolean();
 }
 if (isConditionTrue_0) {
@@ -337,7 +323,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDAmethystCubeObjects3.length;i<l;++i) 
 }
 gdjs.GameCode.GDAmethystCubeObjects3.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(3).add((runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base").getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier").getAsNumber()) * (runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage").getAsNumber() / 100));
+{runtimeScene.getScene().getVariables().getFromIndex(3).add((runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base").getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Multiplier").getAsNumber()) * ((runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Percentage").getAsNumber() + runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Percentage_Other").getAsNumber()) / 100));
 }{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDLight_95959595CastObjects3Objects, gdjs.evtTools.input.getCursorX(runtimeScene, "", 0), gdjs.evtTools.input.getCursorY(runtimeScene, "", 0), "Ui");
 }{for(var i = 0, len = gdjs.GameCode.GDLight_9595CastObjects3.length ;i < len;++i) {
     gdjs.GameCode.GDLight_9595CastObjects3[i].setCenterPositionInScene((( gdjs.GameCode.GDMetalCubeObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDMetalCubeObjects3[0].getCenterXInScene()),(( gdjs.GameCode.GDMetalCubeObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDMetalCubeObjects3[0].getCenterYInScene()));
@@ -631,7 +617,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13796332);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13798396);
 }
 }
 if (isConditionTrue_0) {
@@ -1041,7 +1027,7 @@ gdjs.GameCode.eventsList24(runtimeScene);
 
 
 };gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDWeapon_95959595hitObjects2Objects = Hashtable.newFrom({"Weapon_hit": gdjs.GameCode.GDWeapon_9595hitObjects2});
-gdjs.GameCode.asyncCallback13814220 = function (runtimeScene, asyncObjectsList) {
+gdjs.GameCode.asyncCallback11435980 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.GameCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Weapon_hit"), gdjs.GameCode.GDWeapon_9595hitObjects5);
 
@@ -1060,14 +1046,14 @@ gdjs.GameCode.eventsList26 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GameCode.localVariables);
 for (const obj of gdjs.GameCode.GDWeapon_9595hitObjects3) asyncObjectsList.addObject("Weapon_hit", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.02), (runtimeScene) => (gdjs.GameCode.asyncCallback13814220(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.02), (runtimeScene) => (gdjs.GameCode.asyncCallback11435980(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.GameCode.asyncCallback13815204 = function (runtimeScene, asyncObjectsList) {
+};gdjs.GameCode.asyncCallback13793644 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.GameCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Light_Cast"), gdjs.GameCode.GDLight_9595CastObjects4);
 
@@ -1086,7 +1072,7 @@ gdjs.GameCode.eventsList27 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GameCode.localVariables);
 for (const obj of gdjs.GameCode.GDLight_9595CastObjects2) asyncObjectsList.addObject("Light_Cast", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.02), (runtimeScene) => (gdjs.GameCode.asyncCallback13815204(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.02), (runtimeScene) => (gdjs.GameCode.asyncCallback13793644(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1103,7 +1089,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13813372);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13800380);
 }
 }
 if (isConditionTrue_0) {
@@ -1214,6 +1200,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock"));
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage"));
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage"));
+}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier"));
 }}
 
 }
@@ -1227,7 +1214,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isNativeMobileApp();
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14107588);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14107564);
 }
 }
 if (isConditionTrue_0) {
@@ -1328,6 +1315,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber((runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base").getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier").getAsNumber()) * (runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage").getAsNumber() / 100));
 }{runtimeScene.getScene().getVariables().getFromIndex(4).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage_Other").setNumber(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
 }
 { //Subevents
 gdjs.GameCode.eventsList4(runtimeScene);} //End of subevents
@@ -1400,7 +1388,7 @@ isConditionTrue_0 = isConditionTrue_1;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13781420);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13337612);
 }
 }
 }

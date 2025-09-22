@@ -3485,6 +3485,29 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) == 31 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").add(5);
+}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Status_Life", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").getAsNumber());
+}}
+
+}
+
+
 };gdjs.StoreCode.eventsList15 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList16 = function(runtimeScene) {
@@ -4093,6 +4116,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst"));
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage"));
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier"));
+}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Status_Life", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life"));
 }}
 
 }

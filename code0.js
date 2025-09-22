@@ -198,7 +198,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.GameCode.GDAmethystTextObjects1);
 gdjs.copyArray(runtimeScene.getObjects("amethyst_shard"), gdjs.GameCode.GDamethyst_9595shardObjects1);
-gdjs.copyArray(runtimeScene.getObjects("lifebar"), gdjs.GameCode.GDlifebarObjects1);
+/* Reuse gdjs.GameCode.GDlifebarObjects1 */
 {for(var i = 0, len = gdjs.GameCode.GDlifebarObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDlifebarObjects1[i].getBehavior("Opacity").setOpacity(255);
 }
@@ -1233,6 +1233,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst"));
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage"));
 }{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier"));
+}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Status_Life", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life"));
 }}
 
 }
@@ -1345,10 +1346,14 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("lifebar"), gdjs.GameCode.GDlifebarObjects1);
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber((runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base").getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier").getAsNumber()) * (runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage").getAsNumber() / 100));
 }{runtimeScene.getScene().getVariables().getFromIndex(4).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage_Other").setNumber(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
 }{runtimeScene.getScene().getVariables().getFromIndex(10).getChild("Life").setNumber((runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Multiplier").getAsNumber()) * (runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Percentage").getAsNumber() / 100));
+}{for(var i = 0, len = gdjs.GameCode.GDlifebarObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDlifebarObjects1[i].SetMaxValue((runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").getAsNumber() * runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Multiplier").getAsNumber()) * (runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Percentage").getAsNumber() / 100), null);
+}
 }
 { //Subevents
 gdjs.GameCode.eventsList4(runtimeScene);} //End of subevents

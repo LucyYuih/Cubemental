@@ -2561,7 +2561,7 @@ if (isConditionTrue_0) {
 }
 }
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Amethyst");
+    gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
 }
 }
@@ -3666,6 +3666,31 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) == 34 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Bombs").setBoolean(true);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Bombs", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Bombs").getAsNumber());
+}
+}
+
+}
+
+
 };gdjs.StoreCode.eventsList14 = function(runtimeScene) {
 
 {
@@ -4071,7 +4096,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 0.9);
 }
 }
 }
@@ -4112,7 +4137,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 2);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
 }
 }
 }
@@ -4179,7 +4204,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 0.9);
 }
 }
 }
@@ -4220,7 +4245,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 2);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
 }
 }
 }
@@ -4287,7 +4312,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 0.9);
 }
 }
 }
@@ -4328,7 +4353,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 2);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
 }
 }
 }
@@ -4434,6 +4459,8 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst.Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base"));
 }
 {gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Boss", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Boss"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Bombs", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Bombs"));
 }
 }
 

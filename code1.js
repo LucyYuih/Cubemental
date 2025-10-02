@@ -4004,7 +4004,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "alpha", 0.2);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "alpha", 0.1);
 }
 }
 }
@@ -4112,7 +4112,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 2);
 }
 }
 }
@@ -4220,7 +4220,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 2);
 }
 }
 }
@@ -4328,7 +4328,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 2);
 }
 }
 }

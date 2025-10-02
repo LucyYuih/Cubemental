@@ -15,12 +15,14 @@ gdjs.evtsExt__DragCameraWithPointer__DragCameraWithPointer.eventsList0 = functio
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19184516);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(13919340);
 }
 if (isConditionTrue_0) {
 {eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).setNumber(gdjs.evtTools.input.getCursorX(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")));
-}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1).setNumber(gdjs.evtTools.input.getCursorY(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")));
-}}
+}
+{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1).setNumber(gdjs.evtTools.input.getCursorY(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")));
+}
+}
 
 }
 
@@ -34,7 +36,8 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraX(runtimeScene, gdjs.evtTools.camera.getCameraX(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")) - (gdjs.evtTools.input.getCursorX(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")) - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0).getAsNumber()), eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera"));
-}}
+}
+}
 
 }
 
@@ -48,7 +51,8 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraY(runtimeScene, gdjs.evtTools.camera.getCameraY(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")) - (gdjs.evtTools.input.getCursorY(runtimeScene, eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera")) - eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1).getAsNumber()), eventsFunctionContext.getArgument("Layer"), eventsFunctionContext.getArgument("Camera"));
-}}
+}
+}
 
 }
 
@@ -98,6 +102,7 @@ gdjs.evtsExt__DragCameraWithPointer__DragCameraWithPointer.eventsList0(runtimeSc
 };
 
 gdjs.evtsExt__DragCameraWithPointer__DragCameraWithPointer.func = function(runtimeScene, Camera, Layer, Direction, InputButton, parentEventsFunctionContext) {
+let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -120,14 +125,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -135,7 +141,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

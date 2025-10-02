@@ -134,10 +134,12 @@ gdjs.copyArray(runtimeScene.getObjects("metal_Ingot"), gdjs.StoreCode.GDmetal_95
 {for(var i = 0, len = gdjs.StoreCode.GDMetalTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDMetalTextObjects2[i].getBehavior("Opacity").setOpacity(255);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDmetal_9595IngotObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDmetal_9595IngotObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDmetal_9595IngotObjects2[i].getBehavior("Opacity").setOpacity(255);
 }
-}}
+}
+}
 
 }
 
@@ -155,10 +157,12 @@ gdjs.copyArray(runtimeScene.getObjects("amethyst_shard"), gdjs.StoreCode.GDameth
 {for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDAmethystTextObjects1[i].getBehavior("Opacity").setOpacity(255);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDamethyst_9595shardObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDamethyst_9595shardObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDamethyst_9595shardObjects1[i].getBehavior("Opacity").setOpacity(255);
 }
-}}
+}
+}
 
 }
 
@@ -167,15 +171,52 @@ gdjs.copyArray(runtimeScene.getObjects("amethyst_shard"), gdjs.StoreCode.GDameth
 
 {
 
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects2, gdjs.StoreCode.GDUpgradesButtonObjects3);
+
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() <= gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getScene().getVariables().getFromIndex(6)));
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariableString(gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariables().getFromIndex(2)) == "Metal" ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects3[k] = gdjs.StoreCode.GDUpgradesButtonObjects3[i];
+        ++k;
+    }
 }
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
-}{runtimeScene.getScene().getVariables().getFromIndex(1).setBoolean(true);
-}}
+/* Reuse gdjs.StoreCode.GDUpgradesButtonObjects3 */
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Animation").setAnimationName("Metalcircle");
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects2, gdjs.StoreCode.GDUpgradesButtonObjects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariableString(gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariables().getFromIndex(2)) == "Amethyst" ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects3[k] = gdjs.StoreCode.GDUpgradesButtonObjects3[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.StoreCode.GDUpgradesButtonObjects3 */
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Animation").setAnimationName("AmethystCircle");
+}
+}
+}
 
 }
 
@@ -187,10 +228,30 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() <= gdjs.evtTools.variable.getVariableChildCount(runtimeScene.getScene().getVariables().getFromIndex(6)));
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
+}
+{runtimeScene.getScene().getVariables().getFromIndex(1).setBoolean(true);
+}
+}
+
+}
+
+
+};gdjs.StoreCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isMobile());
 if (isConditionTrue_0) {
 {gdjs.evtTools.window.setFullScreen(runtimeScene, true, true);
-}}
+}
+}
 
 }
 
@@ -203,111 +264,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
 if (isConditionTrue_0) {
 {gdjs.evtTools.window.setFullScreen(runtimeScene, true, false);
-}}
-
 }
-
-
-};gdjs.StoreCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() == 0);
 }
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("MoneyText"), gdjs.StoreCode.GDMoneyTextObjects2);
-{for(var i = 0, len = gdjs.StoreCode.GDMoneyTextObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDMoneyTextObjects2[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), 2)));
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextObjects2);
-{for(var i = 0, len = gdjs.StoreCode.GDMetalTextObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDMetalTextObjects2[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber(), 2)));
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects2);
-{for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDAmethystTextObjects2[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber(), 2)));
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() > 0);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("MoneyText"), gdjs.StoreCode.GDMoneyTextObjects2);
-{for(var i = 0, len = gdjs.StoreCode.GDMoneyTextObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDMoneyTextObjects2[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()) / 3)).getAsString());
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() > 0);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextObjects2);
-{for(var i = 0, len = gdjs.StoreCode.GDMetalTextObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDMetalTextObjects2[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber()) / 3)).getAsString());
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() > 0);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects1);
-{for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects1.length ;i < len;++i) {
-    gdjs.StoreCode.GDAmethystTextObjects1[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber()) / 3)).getAsString());
-}
-}}
 
 }
 
@@ -322,7 +280,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isMobile());
 if (isConditionTrue_0) {
 {gdjs.evtsExt__DragCameraWithPointer__DragCameraWithPointer.func(runtimeScene, 0, "", "both", "Left", null);
-}}
+}
+}
 
 }
 
@@ -335,8 +294,10 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isMobile());
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(0).add(gdjs.evtTools.input.getMouseWheelDelta(runtimeScene) / 200);
-}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber(), "", 0);
-}}
+}
+{gdjs.evtTools.camera.setCameraZoom(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber(), "", 0);
+}
+}
 
 }
 
@@ -349,12 +310,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(47754116);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13884388);
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtsExt__PinchGesture__EnableCameraPinch.func(runtimeScene, true, null);
-}}
+}
+}
 
 }
 
@@ -367,7 +329,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraRotation(runtimeScene, 0, "", 0);
-}}
+}
+}
 
 }
 
@@ -380,7 +343,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.camera.getCameraZoom(runtimeScene, "", 0) < 0.5;
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraZoom(runtimeScene, 0.5, "", 0);
-}}
+}
+}
 
 }
 
@@ -394,7 +358,8 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(0.5);
-}}
+}
+}
 
 }
 
@@ -407,7 +372,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.camera.getCameraZoom(runtimeScene, "", 0) > 4;
 if (isConditionTrue_0) {
 {gdjs.evtTools.camera.setCameraZoom(runtimeScene, 4, "", 0);
-}}
+}
+}
 
 }
 
@@ -421,12 +387,14 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(4);
-}}
+}
+}
 
 }
 
 
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
+gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
@@ -470,15 +438,17 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(38723044);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13924044);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 412, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 564, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 564, "");
+}
+}
 
 }
 
@@ -492,15 +462,17 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(38715812);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13914412);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 412, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 336, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 336, "");
+}
+}
 
 }
 
@@ -514,16 +486,19 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(31388148);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13758596);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 564, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 977, 564, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 640, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 977, 564, "");
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 640, "");
+}
+}
 
 }
 
@@ -537,15 +512,17 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(47446124);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9908676);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 260, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 336, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 336, "");
+}
+}
 
 }
 
@@ -559,15 +536,17 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(47337540);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13743388);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 716, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 640, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 640, "");
+}
+}
 
 }
 
@@ -581,15 +560,17 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(52954372);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13869108);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 749, 564, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 488, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 488, "");
+}
+}
 
 }
 
@@ -603,15 +584,17 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10999564);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14189116);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1053, 564, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 977, 488, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 977, 488, "");
+}
+}
 
 }
 
@@ -625,14 +608,15 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39843828);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12014948);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 977, 412, "");
-}}
+}
+}
 
 }
 
@@ -646,14 +630,15 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11228604);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14056452);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1129, 564, "");
-}}
+}
+}
 
 }
 
@@ -667,14 +652,15 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(38597900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11181484);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1129, 488, "");
-}}
+}
+}
 
 }
 
@@ -688,16 +674,19 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39852396);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14037388);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1053, 488, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1129, 412, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1205, 488, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1129, 412, "");
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1205, 488, "");
+}
+}
 
 }
 
@@ -711,16 +700,19 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(36690940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13256772);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 901, 184, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 260, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 977, 260, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 260, "");
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 977, 260, "");
+}
+}
 
 }
 
@@ -734,14 +726,37 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(39845748);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11588228);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 749, 640, "");
-}}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(6).getChild(16).getAsNumber() >= 1);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14421252);
+}
+}
+if (isConditionTrue_0) {
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 673, 564, "");
+}
+}
 
 }
 
@@ -755,14 +770,15 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15106620);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14498860);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 749, 488, "");
-}}
+}
+}
 
 }
 
@@ -776,14 +792,15 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(34669660);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12577756);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 673, 488, "");
-}}
+}
+}
 
 }
 
@@ -797,16 +814,19 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(49299572);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13948868);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1129, 336, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1053, 412, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1205, 412, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1053, 412, "");
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 1205, 412, "");
+}
+}
 
 }
 
@@ -820,15 +840,17 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15111036);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13887420);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 749, 260, "");
-}{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 184, "");
-}}
+}
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, 825, 184, "");
+}
+}
 
 }
 
@@ -842,14 +864,15 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(51196284);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9288068);
 }
 }
 if (isConditionTrue_0) {
 gdjs.StoreCode.GDUpgradesButtonObjects2.length = 0;
 
 {gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects, 825, 108, "");
-}}
+}
+}
 
 }
 
@@ -898,7 +921,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(1);
 }
-}}
+}
+}
 
 }
 
@@ -945,7 +969,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(2);
 }
-}}
+}
+}
 
 }
 
@@ -992,7 +1017,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(3);
 }
-}}
+}
+}
 
 }
 
@@ -1039,7 +1065,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(4);
 }
-}}
+}
+}
 
 }
 
@@ -1086,7 +1113,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(5);
 }
-}}
+}
+}
 
 }
 
@@ -1133,7 +1161,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(6);
 }
-}}
+}
+}
 
 }
 
@@ -1180,7 +1209,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(7);
 }
-}}
+}
+}
 
 }
 
@@ -1227,7 +1257,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(8);
 }
-}}
+}
+}
 
 }
 
@@ -1274,7 +1305,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(9);
 }
-}}
+}
+}
 
 }
 
@@ -1321,7 +1353,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(10);
 }
-}}
+}
+}
 
 }
 
@@ -1368,10 +1401,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(11);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1418,7 +1453,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(12);
 }
-}}
+}
+}
 
 }
 
@@ -1465,7 +1501,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(13);
 }
-}}
+}
+}
 
 }
 
@@ -1512,10 +1549,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(14);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1562,7 +1601,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(15);
 }
-}}
+}
+}
 
 }
 
@@ -1609,10 +1649,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(16);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1659,10 +1701,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(17);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1709,7 +1753,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(18);
 }
-}}
+}
+}
 
 }
 
@@ -1756,10 +1801,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(19);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1806,10 +1853,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(20);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1856,10 +1905,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(21);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1906,10 +1957,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(22);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -1956,10 +2009,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(23);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Metal");
 }
-}}
+}
+}
 
 }
 
@@ -2008,7 +2063,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(24);
 }
-}}
+}
+}
 
 }
 
@@ -2055,7 +2111,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(25);
 }
-}}
+}
+}
 
 }
 
@@ -2102,7 +2159,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(26);
 }
-}}
+}
+}
 
 }
 
@@ -2149,7 +2207,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(27);
 }
-}}
+}
+}
 
 }
 
@@ -2196,10 +2255,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(28);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Amethyst");
 }
-}}
+}
+}
 
 }
 
@@ -2246,7 +2307,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(29);
 }
-}}
+}
+}
 
 }
 
@@ -2293,7 +2355,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(30);
 }
-}}
+}
+}
 
 }
 
@@ -2340,10 +2403,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(31);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Amethyst");
 }
-}}
+}
+}
 
 }
 
@@ -2390,10 +2455,12 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(32);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Amethyst");
 }
-}}
+}
+}
 
 }
 
@@ -2426,7 +2493,7 @@ gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
-    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) != 32 ) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) != 33 ) {
         isConditionTrue_0 = true;
         gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
         ++k;
@@ -2438,12 +2505,66 @@ gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.StoreCode.GDUpgradesButtonObjects4 */
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(32);
+    gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(33);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Amethyst");
 }
-}}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getX() == 673 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getY() == 564 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) != 34 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+}
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.StoreCode.GDUpgradesButtonObjects4 */
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)).setNumber(34);
+}
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects4.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradesButtonObjects4[i].returnVariable(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(2)).setString("Amethyst");
+}
+}
+}
 
 }
 
@@ -2537,16 +2658,20 @@ gdjs.copyArray(runtimeScene.getObjects("UpgradedText"), gdjs.StoreCode.GDUpgrade
 {for(var i = 0, len = gdjs.StoreCode.GDTextWindowObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDTextWindowObjects2[i].hide();
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeTitleTextObjects2[i].hide();
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeDescTextObjects2[i].hide();
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradedTextObjects2[i].hide();
 }
-}}
+}
+}
 
 }
 
@@ -2578,16 +2703,20 @@ gdjs.copyArray(runtimeScene.getObjects("UpgradedText"), gdjs.StoreCode.GDUpgrade
 {for(var i = 0, len = gdjs.StoreCode.GDTextWindowObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDTextWindowObjects2[i].hide(false);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeTitleTextObjects2[i].hide(false);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeDescTextObjects2[i].hide(false);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradedTextObjects2[i].hide(false);
 }
-}}
+}
+}
 
 }
 
@@ -2623,13 +2752,16 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects3.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeTitleTextObjects3[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Title").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects3.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects3.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeDescTextObjects3[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Description").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects3.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects3.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradedTextObjects3[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(5).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}}
+}
+}
 }
 
 }
@@ -2666,13 +2798,16 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects3.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeTitleTextObjects3[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Title").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects3.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects3.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeDescTextObjects3[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Description").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects3.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects3.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradedTextObjects3[i].getBehavior("Text").setText("M " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(5).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}}
+}
+}
 }
 
 }
@@ -2709,13 +2844,16 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeTitleTextObjects2[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Title").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeDescTextObjects2[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(7).getChild("Description").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradedTextObjects2[i].getBehavior("Text").setText("A " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(5).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
-}}
+}
+}
 }
 
 }
@@ -2777,8 +2915,10 @@ gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects4_1final, gdjs.StoreCode.GD
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").getAsNumber());
+}
+}
 
 }
 
@@ -2800,8 +2940,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base").add(0.5);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Base", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Base", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base").getAsNumber());
+}
+}
 
 }
 
@@ -2823,8 +2965,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base").add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Base", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Base", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base").getAsNumber());
+}
+}
 
 }
 
@@ -2846,8 +2990,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage").add(10);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Percentage", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Percentage", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage").getAsNumber());
+}
+}
 
 }
 
@@ -2869,10 +3015,14 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").add(10);
-}{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
-}}
+}
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
+}
+}
 
 }
 
@@ -2894,8 +3044,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").add(10);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").getAsNumber());
+}
+}
 
 }
 
@@ -2917,8 +3069,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage").setBoolean(true);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage").getAsNumber());
+}
+}
 
 }
 
@@ -2940,8 +3094,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time").sub(0.5);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage_Time", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage_Time", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time").getAsNumber());
+}
+}
 
 }
 
@@ -2963,8 +3119,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").add(0.5);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
+}
+}
 
 }
 
@@ -2986,8 +3144,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock").setBoolean(true);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Unlock", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Unlock", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock").getAsNumber());
+}
+}
 
 }
 
@@ -3009,8 +3169,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").setNumber(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").getAsNumber());
+}
+}
 
 }
 
@@ -3032,10 +3194,14 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").add(10);
-}{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
-}}
+}
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
+}
+}
 
 }
 
@@ -3057,8 +3223,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").add(20);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").getAsNumber());
+}
+}
 
 }
 
@@ -3080,8 +3248,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money").setBoolean(true);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_money", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_money", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money").getAsNumber());
+}
+}
 
 }
 
@@ -3103,10 +3273,14 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").add(10);
-}{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
-}}
+}
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
+}
+}
 
 }
 
@@ -3128,8 +3302,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").setNumber(0.001);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
+}
+}
 
 }
 
@@ -3151,8 +3327,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier").add(0.1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier").getAsNumber());
+}
+}
 
 }
 
@@ -3174,8 +3352,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").add(2);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
+}
+}
 
 }
 
@@ -3197,8 +3377,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage").add(77);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Percentage", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Percentage", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage").getAsNumber());
+}
+}
 
 }
 
@@ -3220,8 +3402,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier").add(0.777);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier").getAsNumber());
+}
+}
 
 }
 
@@ -3245,8 +3429,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").getAsNumber());
+}
+}
 
 }
 
@@ -3268,8 +3454,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").getAsNumber());
+}
+}
 
 }
 
@@ -3291,8 +3479,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base").add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Base", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Base", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base").getAsNumber());
+}
+}
 
 }
 
@@ -3314,10 +3504,14 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney").setBoolean(true);
-}{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").setNumber(2);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metaltomoney", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney").getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
-}}
+}
+{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").setNumber(2);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metaltomoney", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney").getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
+}
+}
 
 }
 
@@ -3339,8 +3533,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").setNumber(4);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
+}
+}
 
 }
 
@@ -3362,8 +3558,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").setNumber(8);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
+}
+}
 
 }
 
@@ -3385,8 +3583,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal").setBoolean(true);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_metal", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_metal", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal").getAsNumber());
+}
+}
 
 }
 
@@ -3408,8 +3608,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").add(0.5);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
+}
+}
 
 }
 
@@ -3431,8 +3633,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock").setBoolean(true);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst_Unlock", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst_Unlock", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock").getAsNumber());
+}
+}
 
 }
 
@@ -3454,8 +3658,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier").add(0.5);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier").getAsNumber());
+}
+}
 
 }
 
@@ -3479,8 +3685,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").setNumber(0.002);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
+}
+}
 
 }
 
@@ -3502,8 +3710,60 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").add(5);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Status_Life", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").getAsNumber());
-}}
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Status_Life", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").getAsNumber());
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) == 32 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base").add(1);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst.Base", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base").getAsNumber());
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) == 33 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Boss").setBoolean(true);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Boss", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Boss").getAsNumber());
+}
+}
 
 }
 
@@ -3564,7 +3824,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(47767468);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14497748);
 }
 }
 }
@@ -3572,12 +3832,18 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).sub(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money", runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Upgraded" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
+{runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+{runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money", runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Upgraded" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+
 { //Subevents: 
 gdjs.StoreCode.eventsList12(runtimeScene);} //Subevents end.
 }
@@ -3626,7 +3892,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10286396);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11629724);
 }
 }
 }
@@ -3634,12 +3900,18 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").sub(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal", runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Upgraded" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
+{runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+{runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal", runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Upgraded" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+
 { //Subevents: 
 gdjs.StoreCode.eventsList13(runtimeScene);} //Subevents end.
 }
@@ -3688,7 +3960,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9494956);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13185276);
 }
 }
 }
@@ -3696,12 +3968,18 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").sub(runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst", runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
-}{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Upgraded" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
+{runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+{runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst", runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(3).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Upgraded" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+
 { //Subevents: 
 gdjs.StoreCode.eventsList14(runtimeScene);} //Subevents end.
 }
@@ -3726,9 +4004,10 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 0.2);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "alpha", 0.2);
 }
-}}
+}
+}
 }
 
 }
@@ -3792,9 +4071,10 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "green", 1);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1);
 }
-}}
+}
+}
 }
 
 }
@@ -3832,9 +4112,10 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "green", 1.5);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
 }
-}}
+}
+}
 }
 
 }
@@ -3898,9 +4179,10 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "green", 1);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1);
 }
-}}
+}
+}
 }
 
 }
@@ -3938,9 +4220,10 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "green", 1.5);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
 }
-}}
+}
+}
 }
 
 }
@@ -4004,9 +4287,10 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "green", 1);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1);
 }
-}}
+}
+}
 }
 
 }
@@ -4044,9 +4328,10 @@ gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 }
 if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "green", 1.5);
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
 }
-}}
+}
+}
 }
 
 }
@@ -4068,7 +4353,8 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDPlayObjects1.length;i<l;++i) {
 gdjs.StoreCode.GDPlayObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
-}}
+}
+}
 
 }
 
@@ -4090,34 +4376,66 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(0));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Max_Cubes", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Min_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Max_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage_Time", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Golden_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Max", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_money", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metaltomoney", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metal_percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier"));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Status_Life", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life"));
-}}
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Max_Cubes", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Min_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Max_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage_Time", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Golden_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Max", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_money", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metaltomoney", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metal_percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Status_Life", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst.Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Boss", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Boss"));
+}
+}
 
 }
 
@@ -4130,12 +4448,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isNativeMobileApp();
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(36820900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14537092);
 }
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.window.setFullScreen(runtimeScene, true, false);
-}}
+}
+}
 
 }
 
@@ -4147,13 +4466,16 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Mouse"), gdjs.StoreCode.GDMouseObjects1);
 {gdjs.evtTools.input.hideCursor(runtimeScene);
-}{for(var i = 0, len = gdjs.StoreCode.GDMouseObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDMouseObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDMouseObjects1[i].setPosition(gdjs.evtTools.input.getCursorX(runtimeScene, "Mouse", 0),gdjs.evtTools.input.getCursorY(runtimeScene, "Mouse", 0));
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDMouseObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDMouseObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDMouseObjects1[i].getBehavior("Scale").setScale(1);
 }
-}}
+}
+}
 
 }
 
@@ -4186,7 +4508,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDMouseObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDMouseObjects1[i].getBehavior("Animation").setAnimationName("Cursor");
 }
-}}
+}
+}
 
 }
 
@@ -4219,7 +4542,8 @@ if (isConditionTrue_0) {
 {for(var i = 0, len = gdjs.StoreCode.GDMouseObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDMouseObjects1[i].getBehavior("Animation").setAnimationName("Select");
 }
-}}
+}
+}
 
 }
 
@@ -4235,15 +4559,39 @@ gdjs.copyArray(runtimeScene.getObjects("OptionsWindow"), gdjs.StoreCode.GDOption
 gdjs.copyArray(runtimeScene.getObjects("TextWindow"), gdjs.StoreCode.GDTextWindowObjects1);
 gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects1);
 {gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.StoreCode.GDUpgradesButtonObjects1.length !== 0 ? gdjs.StoreCode.GDUpgradesButtonObjects1[0] : null), true, "", 0);
-}{for(var i = 0, len = gdjs.StoreCode.GDTextWindowObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDTextWindowObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDTextWindowObjects1[i].getBehavior("Opacity").setOpacity(125);
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDOptionsWindowObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDOptionsWindowObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDOptionsWindowObjects1[i].setCenterPositionInScene(gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0),1175);
 }
 }
+
 { //Subevents
 gdjs.StoreCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects1);
+
+for (gdjs.StoreCode.forEachIndex2 = 0;gdjs.StoreCode.forEachIndex2 < gdjs.StoreCode.GDUpgradesButtonObjects1.length;++gdjs.StoreCode.forEachIndex2) {
+gdjs.StoreCode.GDUpgradesButtonObjects2.length = 0;
+
+
+gdjs.StoreCode.forEachTemporary2 = gdjs.StoreCode.GDUpgradesButtonObjects1[gdjs.StoreCode.forEachIndex2];
+gdjs.StoreCode.GDUpgradesButtonObjects2.push(gdjs.StoreCode.forEachTemporary2);
+let isConditionTrue_0 = false;
+if (true) {
+
+{ //Subevents: 
+gdjs.StoreCode.eventsList1(runtimeScene);} //Subevents end.
+}
 }
 
 }
@@ -4265,8 +4613,10 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDExclamation_9595MarkObjects1.length;
 gdjs.StoreCode.GDExclamation_9595MarkObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.storage.clearJSONFile("Player");
-}{gdjs.evtTools.runtimeScene.stopGame(runtimeScene);
-}}
+}
+{gdjs.evtTools.runtimeScene.stopGame(runtimeScene);
+}
+}
 
 }
 
@@ -4280,11 +4630,14 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(1).setBoolean(false);
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Upgraded" + runtimeScene.getScene().getVariables().getFromIndex(2).getAsString(), runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(6).getChild(runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber()));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "UpgradesPrices" + runtimeScene.getScene().getVariables().getFromIndex(2).getAsString(), runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(3).getChild(runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber()));
 }
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Upgraded" + runtimeScene.getScene().getVariables().getFromIndex(2).getAsString(), runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(6).getChild(runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber()));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "UpgradesPrices" + runtimeScene.getScene().getVariables().getFromIndex(2).getAsString(), runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(3).getChild(runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber()));
+}
+
 { //Subevents
-gdjs.StoreCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
@@ -4307,7 +4660,7 @@ gdjs.StoreCode.GDCursor_95953Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.StoreCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
@@ -4317,10 +4670,105 @@ gdjs.StoreCode.eventsList2(runtimeScene);} //End of subevents
 
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("MoneyText"), gdjs.StoreCode.GDMoneyTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDMoneyTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDMoneyTextObjects1[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), 2)));
+}
+}
+}
+
+}
+
+
 {
 
-{ //Subevents
-gdjs.StoreCode.eventsList3(runtimeScene);} //End of subevents
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() > 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("MoneyText"), gdjs.StoreCode.GDMoneyTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDMoneyTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDMoneyTextObjects1[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber()) / 3)).getAsString());
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDMetalTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDMetalTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber(), 2)));
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() > 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDMetalTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDMetalTextObjects1[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber()) / 3)).getAsString());
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDAmethystTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber(), 2)));
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() > 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDAmethystTextObjects1[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber()) / 3)).getAsString());
+}
+}
 }
 
 }
@@ -4336,10 +4784,12 @@ gdjs.copyArray(runtimeScene.getObjects("UpgradeTitleText"), gdjs.StoreCode.GDUpg
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeTitleTextObjects1[i].setCharacterSize(Math.max(20, 75 - (gdjs.evtTools.string.strLen((gdjs.StoreCode.GDUpgradeTitleTextObjects1[i].getBehavior("Text").getText())) - 20)));
 }
-}{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects1.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradeDescTextObjects1[i].setCharacterSize(Math.max(20, 75 - ((gdjs.evtTools.string.strLen((gdjs.StoreCode.GDUpgradeDescTextObjects1[i].getBehavior("Text").getText())) - 20)) / 6));
 }
-}}
+}
+}
 
 }
 

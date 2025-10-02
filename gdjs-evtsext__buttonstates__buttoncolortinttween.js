@@ -204,7 +204,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ButtonS
 {for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.onCreatedContext.GDObjectObjects1[i].setColor(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIdleColorTint());
 }
-}}
+}
+}
 
 }
 
@@ -215,6 +216,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -245,14 +247,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -260,7 +263,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -305,10 +308,12 @@ if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2, gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects3);
 
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setPreviousState("Focused")
-}{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects3.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FadeIn(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFocusedColorTint(), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -323,10 +328,12 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setPreviousState("Focused")
-}{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FadeOut(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFocusedColorTint(), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -355,10 +362,12 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setPreviousState("Idle")
-}{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FadeOut(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIdleColorTint(), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -408,10 +417,12 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects1 */
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setPreviousState("Pressed")
-}{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
+}
+{for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.doStepPreEventsContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).FadeIn(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPressedColorTint(), eventsFunctionContext);
 }
-}}
+}
+}
 
 }
 
@@ -431,6 +442,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 this._onceTriggers.startNewFrame();
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -461,14 +473,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -476,7 +489,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -521,7 +534,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ButtonS
 {for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.FadeInContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.FadeInContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Tween")).addObjectColorTween("__ButtonColorTintTween.Fade", eventsFunctionContext.getArgument("Value"), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeInEasing(), 1000 * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeInDuration(), false, true);
 }
-}}
+}
+}
 
 }
 
@@ -532,6 +546,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -562,14 +577,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -577,7 +593,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -619,7 +635,8 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__ButtonS
 {for(var i = 0, len = gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.FadeOutContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.FadeOutContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Tween")).addObjectColorTween("__ButtonColorTintTween.Fade", eventsFunctionContext.getArgument("Value"), eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeOutEasing(), 1000 * eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeOutDuration(), false, true);
 }
-}}
+}
+}
 
 }
 
@@ -630,6 +647,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -660,14 +678,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -675,7 +694,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -713,7 +732,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIdleColorTint();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIdleColorTint();}
+}
 
 }
 
@@ -724,6 +744,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -754,14 +775,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -769,7 +791,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -807,7 +829,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIdleColorTint(eventsFunctionContext.getArgument("Value"))
-}}
+}
+}
 
 }
 
@@ -818,6 +841,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -848,14 +872,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -863,7 +888,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -901,7 +926,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFocusedColorTint();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFocusedColorTint();}
+}
 
 }
 
@@ -912,6 +938,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -942,14 +969,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -957,7 +985,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -995,7 +1023,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFocusedColorTint(eventsFunctionContext.getArgument("Value"))
-}}
+}
+}
 
 }
 
@@ -1006,6 +1035,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1036,14 +1066,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1051,7 +1082,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1089,7 +1120,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPressedColorTint();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPressedColorTint();}
+}
 
 }
 
@@ -1100,6 +1132,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1130,14 +1163,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1145,7 +1179,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1183,7 +1217,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setPressedColorTint(eventsFunctionContext.getArgument("Value"))
-}}
+}
+}
 
 }
 
@@ -1194,6 +1229,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1224,14 +1260,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1239,7 +1276,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1277,7 +1314,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeInDuration();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeInDuration();}
+}
 
 }
 
@@ -1288,6 +1326,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1318,14 +1357,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1333,7 +1373,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1371,7 +1411,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFadeInDuration(eventsFunctionContext.getArgument("Value"))
-}}
+}
+}
 
 }
 
@@ -1382,6 +1423,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1412,14 +1454,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1427,7 +1470,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1465,7 +1508,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeOutDuration();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeOutDuration();}
+}
 
 }
 
@@ -1476,6 +1520,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1506,14 +1551,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1521,7 +1567,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1559,7 +1605,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFadeOutDuration(eventsFunctionContext.getArgument("Value"))
-}}
+}
+}
 
 }
 
@@ -1570,6 +1617,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1600,14 +1648,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1615,7 +1664,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1653,7 +1702,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeInEasing();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeInEasing();}
+}
 
 }
 
@@ -1664,6 +1714,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1694,14 +1745,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1709,7 +1761,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1747,7 +1799,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFadeInEasing(eventsFunctionContext.getArgument("Value"))
-}}
+}
+}
 
 }
 
@@ -1758,6 +1811,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1788,14 +1842,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1803,7 +1858,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1841,7 +1896,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeOutEasing();}}
+{eventsFunctionContext.returnValue = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFadeOutEasing();}
+}
 
 }
 
@@ -1852,6 +1908,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1882,14 +1939,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1897,7 +1955,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }
@@ -1935,7 +1993,8 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setFadeOutEasing(eventsFunctionContext.getArgument("Value"))
-}}
+}
+}
 
 }
 
@@ -1946,6 +2005,7 @@ gdjs.evtsExt__ButtonStates__ButtonColorTintTween.ButtonColorTintTween.prototype.
 
 var that = this;
 var runtimeScene = this._runtimeScene;
+let scopeInstanceContainer = null;
 var thisObjectList = [this.owner];
 var Object = Hashtable.newFrom({Object: thisObjectList});
 var Behavior = this.name;
@@ -1976,14 +2036,15 @@ var eventsFunctionContext = {
   createObject: function(objectName) {
     const objectsList = eventsFunctionContext._objectsMap[objectName];
     if (objectsList) {
-      const object = parentEventsFunctionContext ?
+      const object = parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
         parentEventsFunctionContext.createObject(objectsList.firstKey()) :
         runtimeScene.createObject(objectsList.firstKey());
       if (object) {
         objectsList.get(objectsList.firstKey()).push(object);
         eventsFunctionContext._objectArraysMap[objectName].push(object);
       }
-      return object;    }
+      return object;
+    }
     return null;
   },
   getInstancesCountOnScene: function(objectName) {
@@ -1991,7 +2052,7 @@ var eventsFunctionContext = {
     let count = 0;
     if (objectsList) {
       for(const objectName in objectsList.items)
-        count += parentEventsFunctionContext ?
+        count += parentEventsFunctionContext && !(scopeInstanceContainer && scopeInstanceContainer.isObjectRegistered(objectName)) ?
 parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
         runtimeScene.getInstancesCountOnScene(objectName);
     }

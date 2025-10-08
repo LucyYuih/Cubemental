@@ -1,44 +1,29 @@
 
-if (typeof gdjs.evtsExt__PinchGesture__TransformToCanvasY !== "undefined") {
-  gdjs.evtsExt__PinchGesture__TransformToCanvasY.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo8Way !== "undefined") {
+  gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo8Way.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasY = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo8Way = {};
 
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasY.userFunc0xc3fdb8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-const x = eventsFunctionContext.getArgument("PositionX");
-const y = eventsFunctionContext.getArgument("PositionY");
-const layer = runtimeScene.getLayer(eventsFunctionContext.getArgument("Layer"));
-
-eventsFunctionContext.returnValue = layer.convertInverseCoords(x, y)[1];
-};
-gdjs.evtsExt__PinchGesture__TransformToCanvasY.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo8Way.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
+{eventsFunctionContext.returnValue = gdjs.evtTools.common.mod(Math.round(eventsFunctionContext.getArgument("Angle") * 8 / 360), 8);}
 }
-
-}
-
-
-{
-
-
-gdjs.evtsExt__PinchGesture__TransformToCanvasY.userFunc0xc3fdb8(runtimeScene, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasY.func = function(runtimeScene, PositionX, PositionY, Layer, parentEventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo8Way.func = function(runtimeScene, Angle, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -47,8 +32,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PinchGesture"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PinchGesture"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SpriteMultitouchJoystick"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SpriteMultitouchJoystick"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -88,19 +73,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "PositionX") return PositionX;
-if (argName === "PositionY") return PositionY;
-if (argName === "Layer") return Layer;
+if (argName === "Angle") return Angle;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasY.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo8Way.eventsList0(runtimeScene, eventsFunctionContext);
 
 
 return Number(eventsFunctionContext.returnValue) || 0;
 }
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasY.registeredGdjsCallbacks = [];
+gdjs.evtsExt__SpriteMultitouchJoystick__AngleTo8Way.registeredGdjsCallbacks = [];

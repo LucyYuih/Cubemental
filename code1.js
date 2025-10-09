@@ -105,6 +105,31 @@ gdjs.StoreCode.GDdeletsavetext2Objects2= [];
 gdjs.StoreCode.GDdeletsavetext2Objects3= [];
 gdjs.StoreCode.GDdeletsavetext2Objects4= [];
 gdjs.StoreCode.GDdeletsavetext2Objects5= [];
+gdjs.StoreCode.GDOptionsWindow2Objects1= [];
+gdjs.StoreCode.GDOptionsWindow2Objects2= [];
+gdjs.StoreCode.GDOptionsWindow2Objects3= [];
+gdjs.StoreCode.GDOptionsWindow2Objects4= [];
+gdjs.StoreCode.GDOptionsWindow2Objects5= [];
+gdjs.StoreCode.GDoptionstextObjects1= [];
+gdjs.StoreCode.GDoptionstextObjects2= [];
+gdjs.StoreCode.GDoptionstextObjects3= [];
+gdjs.StoreCode.GDoptionstextObjects4= [];
+gdjs.StoreCode.GDoptionstextObjects5= [];
+gdjs.StoreCode.GDMusicSliderObjects1= [];
+gdjs.StoreCode.GDMusicSliderObjects2= [];
+gdjs.StoreCode.GDMusicSliderObjects3= [];
+gdjs.StoreCode.GDMusicSliderObjects4= [];
+gdjs.StoreCode.GDMusicSliderObjects5= [];
+gdjs.StoreCode.GDEffectsSliderObjects1= [];
+gdjs.StoreCode.GDEffectsSliderObjects2= [];
+gdjs.StoreCode.GDEffectsSliderObjects3= [];
+gdjs.StoreCode.GDEffectsSliderObjects4= [];
+gdjs.StoreCode.GDEffectsSliderObjects5= [];
+gdjs.StoreCode.GDShineBlockTextObjects1= [];
+gdjs.StoreCode.GDShineBlockTextObjects2= [];
+gdjs.StoreCode.GDShineBlockTextObjects3= [];
+gdjs.StoreCode.GDShineBlockTextObjects4= [];
+gdjs.StoreCode.GDShineBlockTextObjects5= [];
 gdjs.StoreCode.GDMouseObjects1= [];
 gdjs.StoreCode.GDMouseObjects2= [];
 gdjs.StoreCode.GDMouseObjects3= [];
@@ -120,10 +145,15 @@ gdjs.StoreCode.GDamethyst_9595shardObjects2= [];
 gdjs.StoreCode.GDamethyst_9595shardObjects3= [];
 gdjs.StoreCode.GDamethyst_9595shardObjects4= [];
 gdjs.StoreCode.GDamethyst_9595shardObjects5= [];
+gdjs.StoreCode.GDShineBlockObjects1= [];
+gdjs.StoreCode.GDShineBlockObjects2= [];
+gdjs.StoreCode.GDShineBlockObjects3= [];
+gdjs.StoreCode.GDShineBlockObjects4= [];
+gdjs.StoreCode.GDShineBlockObjects5= [];
 
 
-gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects1, "Play": gdjs.StoreCode.GDPlayObjects1, "ConfigButton": gdjs.StoreCode.GDConfigButtonObjects1, "Exclamation_Mark": gdjs.StoreCode.GDExclamation_9595MarkObjects1, "Cursor_3": gdjs.StoreCode.GDCursor_95953Objects1});
-gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects1, "Play": gdjs.StoreCode.GDPlayObjects1, "ConfigButton": gdjs.StoreCode.GDConfigButtonObjects1, "Exclamation_Mark": gdjs.StoreCode.GDExclamation_9595MarkObjects1, "Cursor_3": gdjs.StoreCode.GDCursor_95953Objects1});
+gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1ObjectsGDgdjs_9546StoreCode_9546GDMusicSliderObjects1ObjectsGDgdjs_9546StoreCode_9546GDEffectsSliderObjects1Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects1, "Play": gdjs.StoreCode.GDPlayObjects1, "ConfigButton": gdjs.StoreCode.GDConfigButtonObjects1, "Exclamation_Mark": gdjs.StoreCode.GDExclamation_9595MarkObjects1, "Cursor_3": gdjs.StoreCode.GDCursor_95953Objects1, "MusicSlider": gdjs.StoreCode.GDMusicSliderObjects1, "EffectsSlider": gdjs.StoreCode.GDEffectsSliderObjects1});
+gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1ObjectsGDgdjs_9546StoreCode_9546GDMusicSliderObjects1ObjectsGDgdjs_9546StoreCode_9546GDEffectsSliderObjects1Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects1, "Play": gdjs.StoreCode.GDPlayObjects1, "ConfigButton": gdjs.StoreCode.GDConfigButtonObjects1, "Exclamation_Mark": gdjs.StoreCode.GDExclamation_9595MarkObjects1, "Cursor_3": gdjs.StoreCode.GDCursor_95953Objects1, "MusicSlider": gdjs.StoreCode.GDMusicSliderObjects1, "EffectsSlider": gdjs.StoreCode.GDEffectsSliderObjects1});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDdeletsavetext2Objects3Objects = Hashtable.newFrom({"deletsavetext2": gdjs.StoreCode.GDdeletsavetext2Objects3});
 gdjs.StoreCode.eventsList0 = function(runtimeScene) {
 
@@ -185,7 +215,7 @@ if (true) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock").getAsBoolean();
+{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Unlock").getAsBoolean();
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextObjects2);
@@ -208,17 +238,40 @@ gdjs.copyArray(runtimeScene.getObjects("metal_Ingot"), gdjs.StoreCode.GDmetal_95
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock").getAsBoolean();
+{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst_Unlock").getAsBoolean();
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects1);
-gdjs.copyArray(runtimeScene.getObjects("amethyst_shard"), gdjs.StoreCode.GDamethyst_9595shardObjects1);
-{for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects1.length ;i < len;++i) {
-    gdjs.StoreCode.GDAmethystTextObjects1[i].getBehavior("Opacity").setOpacity(255);
+gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects2);
+gdjs.copyArray(runtimeScene.getObjects("amethyst_shard"), gdjs.StoreCode.GDamethyst_9595shardObjects2);
+{for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects2.length ;i < len;++i) {
+    gdjs.StoreCode.GDAmethystTextObjects2[i].getBehavior("Opacity").setOpacity(255);
 }
 }
-{for(var i = 0, len = gdjs.StoreCode.GDamethyst_9595shardObjects1.length ;i < len;++i) {
-    gdjs.StoreCode.GDamethyst_9595shardObjects1[i].getBehavior("Opacity").setOpacity(255);
+{for(var i = 0, len = gdjs.StoreCode.GDamethyst_9595shardObjects2.length ;i < len;++i) {
+    gdjs.StoreCode.GDamethyst_9595shardObjects2[i].getBehavior("Opacity").setOpacity(255);
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getGame().getVariables().getFromIndex(6).getChild("ShinyBlock_Unlock").getAsBoolean();
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ShineBlock"), gdjs.StoreCode.GDShineBlockObjects1);
+gdjs.copyArray(runtimeScene.getObjects("ShineBlockText"), gdjs.StoreCode.GDShineBlockTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDShineBlockTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDShineBlockTextObjects1[i].getBehavior("Opacity").setOpacity(255);
+}
+}
+{for(var i = 0, len = gdjs.StoreCode.GDShineBlockObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDShineBlockObjects1[i].getBehavior("Opacity").setOpacity(255);
 }
 }
 }
@@ -339,7 +392,197 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList9 = function(runtimeScene) {
+};gdjs.StoreCode.asyncCallback19847012 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.StoreCode.localVariables);
+{gdjs.evtTools.camera.setCameraX(runtimeScene, 2880, "Options", 0);
+}
+gdjs.StoreCode.localVariables.length = 0;
+}
+gdjs.StoreCode.eventsList9 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.StoreCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.StoreCode.asyncCallback19847012(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.StoreCode.asyncCallback18006044 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.StoreCode.localVariables);
+{gdjs.evtTools.camera.setCameraX(runtimeScene, 960, "Options", 0);
+}
+gdjs.StoreCode.localVariables.length = 0;
+}
+gdjs.StoreCode.eventsList10 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.StoreCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.StoreCode.asyncCallback18006044(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.StoreCode.eventsList11 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ConfigButton"), gdjs.StoreCode.GDConfigButtonObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDConfigButtonObjects2.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDConfigButtonObjects2[i].getBehavior("ButtonFSM").IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDConfigButtonObjects2[k] = gdjs.StoreCode.GDConfigButtonObjects2[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDConfigButtonObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.getCameraX(runtimeScene, "Options", 0) == 960;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19779500);
+}
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.StoreCode.eventsList9(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ConfigButton"), gdjs.StoreCode.GDConfigButtonObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDConfigButtonObjects2.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDConfigButtonObjects2[i].getBehavior("ButtonFSM").IsClicked(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDConfigButtonObjects2[k] = gdjs.StoreCode.GDConfigButtonObjects2[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDConfigButtonObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.camera.getCameraX(runtimeScene, "Options", 0) == 2880;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19112036);
+}
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.StoreCode.eventsList10(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("EffectsSlider"), gdjs.StoreCode.GDEffectsSliderObjects2);
+gdjs.copyArray(runtimeScene.getObjects("MusicSlider"), gdjs.StoreCode.GDMusicSliderObjects2);
+{gdjs.evtTools.storage.readNumberFromJSONFile("PlayerOptions", "MusicVolume", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("MusicVolume"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("PlayerOptions", "EffectsVolume", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("EffectsVolume"));
+}
+{gdjs.evtTools.sound.setSoundOnChannelVolume(runtimeScene, 1, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("MusicVolume").getAsNumber());
+}
+{for(var i = 0, len = gdjs.StoreCode.GDMusicSliderObjects2.length ;i < len;++i) {
+    gdjs.StoreCode.GDMusicSliderObjects2[i].SetValue(gdjs.evtTools.sound.getSoundOnChannelVolume(runtimeScene, 1), null);
+}
+}
+{gdjs.evtTools.sound.setSoundOnChannelVolume(runtimeScene, 2, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("EffectsVolume").getAsNumber());
+}
+{for(var i = 0, len = gdjs.StoreCode.GDEffectsSliderObjects2.length ;i < len;++i) {
+    gdjs.StoreCode.GDEffectsSliderObjects2[i].SetValue(gdjs.evtTools.sound.getSoundOnChannelVolume(runtimeScene, 2), null);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("MusicSlider"), gdjs.StoreCode.GDMusicSliderObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDMusicSliderObjects2.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDMusicSliderObjects2[i].IsBeingDragged(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDMusicSliderObjects2[k] = gdjs.StoreCode.GDMusicSliderObjects2[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDMusicSliderObjects2.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.StoreCode.GDMusicSliderObjects2 */
+{gdjs.evtTools.sound.setSoundOnChannelVolume(runtimeScene, 1, (( gdjs.StoreCode.GDMusicSliderObjects2.length === 0 ) ? 0 :gdjs.StoreCode.GDMusicSliderObjects2[0].Value(null)));
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("PlayerOptions", "MusicVolume", (( gdjs.StoreCode.GDMusicSliderObjects2.length === 0 ) ? 0 :gdjs.StoreCode.GDMusicSliderObjects2[0].Value(null)));
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("EffectsSlider"), gdjs.StoreCode.GDEffectsSliderObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDEffectsSliderObjects1.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDEffectsSliderObjects1[i].IsBeingDragged(null) ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDEffectsSliderObjects1[k] = gdjs.StoreCode.GDEffectsSliderObjects1[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDEffectsSliderObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.StoreCode.GDEffectsSliderObjects1 */
+{gdjs.evtTools.sound.setSoundOnChannelVolume(runtimeScene, 2, (( gdjs.StoreCode.GDEffectsSliderObjects1.length === 0 ) ? 0 :gdjs.StoreCode.GDEffectsSliderObjects1[0].Value(null)));
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("PlayerOptions", "EffectsVolume", (( gdjs.StoreCode.GDEffectsSliderObjects1.length === 0 ) ? 0 :gdjs.StoreCode.GDEffectsSliderObjects1[0].Value(null)));
+}
+}
+
+}
+
+
+};gdjs.StoreCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -379,7 +622,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16846212);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19812348);
 }
 }
 if (isConditionTrue_0) {
@@ -462,7 +705,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList10 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList13 = function(runtimeScene) {
 
 {
 
@@ -473,7 +716,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16850876);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18799988);
 }
 }
 if (isConditionTrue_0) {
@@ -495,7 +738,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16851988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19751844);
 }
 }
 if (isConditionTrue_0) {
@@ -517,7 +760,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16853100);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19029996);
 }
 }
 if (isConditionTrue_0) {
@@ -541,7 +784,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16854180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19001748);
 }
 }
 if (isConditionTrue_0) {
@@ -563,7 +806,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16855548);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19528172);
 }
 }
 if (isConditionTrue_0) {
@@ -585,7 +828,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16856708);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14567604);
 }
 }
 if (isConditionTrue_0) {
@@ -607,7 +850,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16857764);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10292700);
 }
 }
 if (isConditionTrue_0) {
@@ -629,7 +872,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16858676);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12472180);
 }
 }
 if (isConditionTrue_0) {
@@ -649,7 +892,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16859708);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12700140);
 }
 }
 if (isConditionTrue_0) {
@@ -669,7 +912,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16860716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17790404);
 }
 }
 if (isConditionTrue_0) {
@@ -689,7 +932,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16861188);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15407236);
 }
 }
 if (isConditionTrue_0) {
@@ -713,7 +956,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16862804);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18171916);
 }
 }
 if (isConditionTrue_0) {
@@ -737,7 +980,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16863844);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14505308);
 }
 }
 if (isConditionTrue_0) {
@@ -757,7 +1000,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16864988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18271932);
 }
 }
 if (isConditionTrue_0) {
@@ -777,7 +1020,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16865580);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9782764);
 }
 }
 if (isConditionTrue_0) {
@@ -797,7 +1040,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16866724);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9254324);
 }
 }
 if (isConditionTrue_0) {
@@ -817,7 +1060,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16867316);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10388340);
 }
 }
 if (isConditionTrue_0) {
@@ -841,7 +1084,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16869036);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10281892);
 }
 }
 if (isConditionTrue_0) {
@@ -863,7 +1106,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12230900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14388028);
 }
 }
 if (isConditionTrue_0) {
@@ -883,7 +1126,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12696804);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9587788);
 }
 }
 if (isConditionTrue_0) {
@@ -903,7 +1146,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16869948);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10817132);
 }
 }
 if (isConditionTrue_0) {
@@ -919,20 +1162,20 @@ if (isConditionTrue_0) {
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
-gdjs.StoreCode.eventsList11 = function(runtimeScene) {
+gdjs.StoreCode.eventsList14 = function(runtimeScene) {
 
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
-gdjs.StoreCode.eventsList12 = function(runtimeScene) {
+gdjs.StoreCode.eventsList15 = function(runtimeScene) {
 
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
-gdjs.StoreCode.eventsList13 = function(runtimeScene) {
+gdjs.StoreCode.eventsList16 = function(runtimeScene) {
 
-};gdjs.StoreCode.eventsList14 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList17 = function(runtimeScene) {
 
 {
 
 
-gdjs.StoreCode.eventsList10(runtimeScene);
+gdjs.StoreCode.eventsList13(runtimeScene);
 }
 
 
@@ -1074,7 +1317,7 @@ if (isConditionTrue_0) {
 }
 }
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradedTextObjects3[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
+    gdjs.StoreCode.GDUpgradedTextObjects3[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
 }
 }
@@ -1120,7 +1363,7 @@ if (isConditionTrue_0) {
 }
 }
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects3.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradedTextObjects3[i].getBehavior("Text").setText("M " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
+    gdjs.StoreCode.GDUpgradedTextObjects3[i].getBehavior("Text").setText("M " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
 }
 }
@@ -1166,7 +1409,7 @@ if (isConditionTrue_0) {
 }
 }
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradedTextObjects2[i].getBehavior("Text").setText("A " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
+    gdjs.StoreCode.GDUpgradedTextObjects2[i].getBehavior("Text").setText("A " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
 }
 }
@@ -1175,7 +1418,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList15 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -1230,9 +1473,9 @@ gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects4_1final, gdjs.StoreCode.GD
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Cubes").add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Cubes").getAsNumber());
 }
 }
 
@@ -1255,9 +1498,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base").add(0.5);
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Base").add(0.5);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Base", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Base", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Base").getAsNumber());
 }
 }
 
@@ -1280,9 +1523,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base").add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Base").add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Base", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Base", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Base").getAsNumber());
 }
 }
 
@@ -1305,9 +1548,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Percentage").add(10);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Percentage", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Percentage", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Percentage").getAsNumber());
 }
 }
 
@@ -1330,13 +1573,13 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Min_Chance").add(10);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Chance").add(10);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Min_Chance").getAsNumber());
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Chance").getAsNumber());
 }
 }
 
@@ -1359,9 +1602,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Percentage").add(10);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Percentage").getAsNumber());
 }
 }
 
@@ -1384,9 +1627,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Auto_Damage").setBoolean(true);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Auto_Damage").getAsNumber());
 }
 }
 
@@ -1409,9 +1652,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time").sub(0.5);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Auto_Damage_Time").sub(0.5);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage_Time", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Auto_Damage_Time", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Auto_Damage_Time").getAsNumber());
 }
 }
 
@@ -1434,9 +1677,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").add(0.5);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Golden_Chance").add(0.5);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Golden_Chance").getAsNumber());
 }
 }
 
@@ -1459,9 +1702,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Unlock").setBoolean(true);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Unlock", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Unlock", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Unlock").getAsNumber());
 }
 }
 
@@ -1484,9 +1727,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Max").setNumber(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Max").getAsNumber());
 }
 }
 
@@ -1509,13 +1752,13 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Min_Chance").add(10);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Chance").add(10);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Min_Chance").getAsNumber());
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Chance").getAsNumber());
 }
 }
 
@@ -1538,9 +1781,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").add(20);
+{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Percentage").add(20);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Percentage").getAsNumber());
 }
 }
 
@@ -1563,9 +1806,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("home_money").setBoolean(true);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_money", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_money", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("home_money").getAsNumber());
 }
 }
 
@@ -1588,13 +1831,13 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Min_Chance").add(10);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").add(10);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Chance").add(10);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Min_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Min_Chance").getAsNumber());
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Cubes_Max_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Chance").getAsNumber());
 }
 }
 
@@ -1617,9 +1860,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").setNumber(0.001);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MoneyPercentage").setNumber(0.001);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MoneyPercentage").getAsNumber());
 }
 }
 
@@ -1642,9 +1885,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier").add(0.1);
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Multiplier").add(0.1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Multiplier").getAsNumber());
 }
 }
 
@@ -1667,9 +1910,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").add(2);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Golden_Chance").add(2);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Golden_Chance").getAsNumber());
 }
 }
 
@@ -1692,9 +1935,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage").add(77);
+{runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Percentage").add(77);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Percentage", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Percentage", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Percentage").getAsNumber());
 }
 }
 
@@ -1717,16 +1960,16 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier").add(0.777);
+{runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Multiplier").add(0.777);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "cig.Metal_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Multiplier").getAsNumber());
 }
-}
-
 }
 
+}
 
-};gdjs.StoreCode.eventsList16 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -1744,9 +1987,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Max").add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Max", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Max").getAsNumber());
 }
 }
 
@@ -1769,9 +2012,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Cubes").add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Max_Cubes", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Cubes").getAsNumber());
 }
 }
 
@@ -1794,9 +2037,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base").add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Base").add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Base", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal_Base", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Base").getAsNumber());
 }
 }
 
@@ -1819,13 +2062,13 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("metaltomoney").setBoolean(true);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").setNumber(2);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage").setNumber(2);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metaltomoney", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metaltomoney", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("metaltomoney").getAsNumber());
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage").getAsNumber());
 }
 }
 
@@ -1848,9 +2091,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").setNumber(4);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage").setNumber(4);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage").getAsNumber());
 }
 }
 
@@ -1873,9 +2116,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").setNumber(8);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage").setNumber(8);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "metal_percentage", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage").getAsNumber());
 }
 }
 
@@ -1898,9 +2141,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("home_metal").setBoolean(true);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_metal", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "home_metal", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("home_metal").getAsNumber());
 }
 }
 
@@ -1923,9 +2166,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").add(0.5);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Golden_Chance").add(0.5);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Golden_Chance", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Golden_Chance").getAsNumber());
 }
 }
 
@@ -1948,9 +2191,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst_Unlock").setBoolean(true);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst_Unlock", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst_Unlock", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst_Unlock").getAsNumber());
 }
 }
 
@@ -1973,9 +2216,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier").add(0.5);
+{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Multiplier").add(0.5);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Multiplier").getAsNumber());
 }
 }
 
@@ -1998,16 +2241,16 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Bombs").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("Bombs").setBoolean(true);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Bombs", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Bombs").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Bombs", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("Bombs").getAsNumber());
 }
-}
-
 }
 
+}
 
-};gdjs.StoreCode.eventsList17 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -2025,9 +2268,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").setNumber(0.002);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MoneyPercentage").setNumber(0.002);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Money_Percentage_Other", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MoneyPercentage").getAsNumber());
 }
 }
 
@@ -2050,9 +2293,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(10).getChild("Life").add(5);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Status_Life", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Status_Life", runtimeScene.getGame().getVariables().getFromIndex(10).getChild("Life").getAsNumber());
 }
 }
 
@@ -2075,9 +2318,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base").add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Amethyst").getChild("Base").add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst.Base", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst.Base", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Amethyst").getChild("Base").getAsNumber());
 }
 }
 
@@ -2100,9 +2343,9 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Boss").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Boss").setBoolean(true);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Boss", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Boss").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Boss", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Boss").getAsNumber());
 }
 }
 
@@ -2125,24 +2368,18 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++
 }
 gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(7).getChild("LifeRegen").setBoolean(true);
+{runtimeScene.getGame().getVariables().getFromIndex(9).getChild("LifeRegen").setBoolean(true);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(8).getChild("LifeRegen").getChild("Base").add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(10).getChild("LifeRegen").getChild("Base").add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "PlayerUp.LifeRegen", runtimeScene.getGame().getVariables().getFromIndex(7).getChild("LifeRegen").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "PlayerUp.LifeRegen", runtimeScene.getGame().getVariables().getFromIndex(9).getChild("LifeRegen").getAsNumber());
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "LifeRegen.Base", runtimeScene.getGame().getVariables().getFromIndex(8).getChild("LifeRegen").getChild("Base").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "LifeRegen.Base", runtimeScene.getGame().getVariables().getFromIndex(10).getChild("LifeRegen").getChild("Base").getAsNumber());
 }
-}
-
 }
 
+}
 
-};gdjs.StoreCode.eventsList18 = function(runtimeScene) {
-
-};gdjs.StoreCode.eventsList19 = function(runtimeScene) {
-
-};gdjs.StoreCode.eventsList20 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList21 = function(runtimeScene) {
 
@@ -2153,6 +2390,12 @@ if (isConditionTrue_0) {
 };gdjs.StoreCode.eventsList24 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList25 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList26 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList27 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList28 = function(runtimeScene) {
 
 {
 
@@ -2204,7 +2447,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16921492);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20241124);
 }
 }
 }
@@ -2228,7 +2471,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList15(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList18(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2257,7 +2500,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() >= runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber() >= runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -2285,7 +2528,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16948308);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20451908);
 }
 }
 }
@@ -2293,13 +2536,13 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").sub(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+{runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").sub(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
 {runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(5).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
 {runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal", runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Metal", runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber());
 }
 {gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
@@ -2307,7 +2550,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList16(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList19(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2336,7 +2579,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() >= runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber() >= runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -2364,7 +2607,7 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16963484);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20159316);
 }
 }
 }
@@ -2372,13 +2615,13 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").sub(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+{runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").sub(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
 {runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).mul(runtimeScene.getScene().getVariables().getFromIndex(5).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
 {runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).add(1);
 }
-{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst", runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber());
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst", runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber());
 }
 {gdjs.evtTools.storage.writeNumberInJSONFile("Player", "UpgradesPrices" + ((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
 }
@@ -2386,7 +2629,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList17(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList20(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2544,7 +2787,7 @@ isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
 
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects4[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() > runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber());
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects4[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() > runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber());
 }
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
@@ -2605,7 +2848,7 @@ gdjs.StoreCode.forEachTemporary3 = gdjs.StoreCode.GDUpgradesButtonObjects2[gdjs.
 gdjs.StoreCode.GDUpgradesButtonObjects3.push(gdjs.StoreCode.forEachTemporary3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() <= runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber());
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() <= runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber());
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -2652,7 +2895,7 @@ isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
 
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects4[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() > runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber());
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects4[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() > runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber());
 }
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
@@ -2713,7 +2956,7 @@ gdjs.StoreCode.forEachTemporary3 = gdjs.StoreCode.GDUpgradesButtonObjects2[gdjs.
 gdjs.StoreCode.GDUpgradesButtonObjects3.push(gdjs.StoreCode.forEachTemporary3);
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() <= runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber());
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() <= runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber());
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -2764,7 +3007,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList26 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList29 = function(runtimeScene) {
 
 {
 
@@ -2782,69 +3025,95 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(0));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Max_Cubes", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Cubes"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Max_Cubes", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Cubes"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Base"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Base"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Base"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Base"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Percentage"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Percentage"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Min_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Min_Chance"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Min_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Min_Chance"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Max_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Max_Chance"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Cubes_Max_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Max_Chance"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Percentage"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Percentage"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Auto_Damage"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage_Time", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Auto_Damage_Time"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Auto_Damage_Time", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Auto_Damage_Time"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Golden_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Golden_Chance"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Golden_Chance", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Golden_Chance"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Unlock"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Unlock"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Max", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Metal_Max"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Max", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal_Max"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_money", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_money"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_money", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("home_money"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Base"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Base"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metaltomoney", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("metaltomoney"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metaltomoney", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("metaltomoney"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metal_percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "metal_percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("home_metal"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "home_metal", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("home_metal"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5).getChild("Multiplier"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Multiplier"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Amethyst_Unlock"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst_Unlock"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MoneyPercentage"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Money_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MoneyPercentage"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("MetalPercentage"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Metal_Percentage_Other", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("MetalPercentage"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("Multiplier"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Damage_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Multiplier"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Percentage"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Percentage", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Percentage"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Metal").getChild("Multiplier"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "cig.Metal_Multiplier", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Metal").getChild("Multiplier"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Status_Life", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Life"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Status_Life", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(10).getChild("Life"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst.Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst").getChild("Base"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst.Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("Amethyst").getChild("Base"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Boss", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Boss"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Boss", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Boss"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Bombs", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("Bombs"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Bombs", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("Bombs"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "PlayerUp.LifeRegen", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(7).getChild("LifeRegen"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "PlayerUp.LifeRegen", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(9).getChild("LifeRegen"));
 }
-{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "LifeRegen.Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(8).getChild("LifeRegen").getChild("Base"));
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "LifeRegen.Base", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(10).getChild("LifeRegen").getChild("Base"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "ShinyBlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "ShinyBlock_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("ShinyBlock_Unlock"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "GameLevel_Max", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Max"));
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.storage.readNumberFromJSONFile("PlayerOptions", "MusicVolume", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("MusicVolume"));
+}
+{gdjs.evtTools.sound.setSoundOnChannelVolume(runtimeScene, 1, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("MusicVolume").getAsNumber());
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("PlayerOptions", "EffectsVolume", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("EffectsVolume"));
+}
+{gdjs.evtTools.sound.setSoundOnChannelVolume(runtimeScene, 2, runtimeScene.getGame().getVariables().getFromIndex(2).getChild("EffectsVolume").getAsNumber());
 }
 }
 
@@ -2859,7 +3128,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isNativeMobileApp();
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17113948);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20389156);
 }
 }
 if (isConditionTrue_0) {
@@ -2895,14 +3164,16 @@ gdjs.copyArray(runtimeScene.getObjects("Mouse"), gdjs.StoreCode.GDMouseObjects1)
 
 gdjs.copyArray(runtimeScene.getObjects("ConfigButton"), gdjs.StoreCode.GDConfigButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Cursor_3"), gdjs.StoreCode.GDCursor_95953Objects1);
+gdjs.copyArray(runtimeScene.getObjects("EffectsSlider"), gdjs.StoreCode.GDEffectsSliderObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Exclamation_Mark"), gdjs.StoreCode.GDExclamation_9595MarkObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Mouse"), gdjs.StoreCode.GDMouseObjects1);
+gdjs.copyArray(runtimeScene.getObjects("MusicSlider"), gdjs.StoreCode.GDMusicSliderObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Play"), gdjs.StoreCode.GDPlayObjects1);
 gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1Objects, runtimeScene, true, true);
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1ObjectsGDgdjs_9546StoreCode_9546GDMusicSliderObjects1ObjectsGDgdjs_9546StoreCode_9546GDEffectsSliderObjects1Objects, runtimeScene, true, true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.StoreCode.GDMouseObjects1.length;i<l;++i) {
@@ -2929,14 +3200,16 @@ if (isConditionTrue_0) {
 
 gdjs.copyArray(runtimeScene.getObjects("ConfigButton"), gdjs.StoreCode.GDConfigButtonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Cursor_3"), gdjs.StoreCode.GDCursor_95953Objects1);
+gdjs.copyArray(runtimeScene.getObjects("EffectsSlider"), gdjs.StoreCode.GDEffectsSliderObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Exclamation_Mark"), gdjs.StoreCode.GDExclamation_9595MarkObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Mouse"), gdjs.StoreCode.GDMouseObjects1);
+gdjs.copyArray(runtimeScene.getObjects("MusicSlider"), gdjs.StoreCode.GDMusicSliderObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Play"), gdjs.StoreCode.GDPlayObjects1);
 gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1Objects, runtimeScene, true, false);
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1ObjectsGDgdjs_9546StoreCode_9546GDMusicSliderObjects1ObjectsGDgdjs_9546StoreCode_9546GDEffectsSliderObjects1Objects, runtimeScene, true, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.StoreCode.GDMouseObjects1.length;i<l;++i) {
@@ -2989,6 +3262,22 @@ for (var i = 0, k = 0, l = gdjs.StoreCode.GDCursor_95953Objects1.length;i<l;++i)
     }
 }
 gdjs.StoreCode.GDCursor_95953Objects1.length = k;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDMusicSliderObjects1.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDMusicSliderObjects1[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDMusicSliderObjects1[k] = gdjs.StoreCode.GDMusicSliderObjects1[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDMusicSliderObjects1.length = k;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDEffectsSliderObjects1.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDEffectsSliderObjects1[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDEffectsSliderObjects1[k] = gdjs.StoreCode.GDEffectsSliderObjects1[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDEffectsSliderObjects1.length = k;
 }
 }
 if (isConditionTrue_0) {
@@ -3238,7 +3527,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("MoneyText"), gdjs.StoreCode.GDMoneyTextObjects1);
 {for(var i = 0, len = gdjs.StoreCode.GDMoneyTextObjects1.length ;i < len;++i) {
-    gdjs.StoreCode.GDMoneyTextObjects1[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() / Math.pow(1000, Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), 1)) / 3))) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), 1)) / 3))).getAsString());
+    gdjs.StoreCode.GDMoneyTextObjects1[i].getBehavior("Text").setText("$ " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber() / Math.pow(1000, Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), 1)) / 3))) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), 1)) / 3))).getAsString());
 }
 }
 }
@@ -3251,7 +3540,7 @@ gdjs.copyArray(runtimeScene.getObjects("MoneyText"), gdjs.StoreCode.GDMoneyTextO
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() == 0);
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber() == 0);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextObjects1);
@@ -3269,12 +3558,12 @@ gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextO
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() > 0);
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber() > 0);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextObjects1);
 {for(var i = 0, len = gdjs.StoreCode.GDMetalTextObjects1.length ;i < len;++i) {
-    gdjs.StoreCode.GDMetalTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber() / Math.pow(1000, Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber(), 1)) / 3))) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Metal").getAsNumber(), 1)) / 3))).getAsString());
+    gdjs.StoreCode.GDMetalTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber() / Math.pow(1000, Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber(), 1)) / 3))) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Metal").getAsNumber(), 1)) / 3))).getAsString());
 }
 }
 }
@@ -3287,7 +3576,7 @@ gdjs.copyArray(runtimeScene.getObjects("MetalText"), gdjs.StoreCode.GDMetalTextO
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() == 0);
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber() == 0);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects1);
@@ -3305,12 +3594,48 @@ gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethys
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() > 0);
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber() > 0);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("AmethystText"), gdjs.StoreCode.GDAmethystTextObjects1);
 {for(var i = 0, len = gdjs.StoreCode.GDAmethystTextObjects1.length ;i < len;++i) {
-    gdjs.StoreCode.GDAmethystTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber() / Math.pow(1000, Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber(), 1)) / 3))) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(9).getChild(Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Amethyst").getAsNumber(), 1)) / 3))).getAsString());
+    gdjs.StoreCode.GDAmethystTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber() / Math.pow(1000, Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber(), 1)) / 3))) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("Amethyst").getAsNumber(), 1)) / 3))).getAsString());
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock").getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ShineBlockText"), gdjs.StoreCode.GDShineBlockTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDShineBlockTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDShineBlockTextObjects1[i].getBehavior("Text").setText("0");
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock").getAsNumber() > 0);
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ShineBlockText"), gdjs.StoreCode.GDShineBlockTextObjects1);
+{for(var i = 0, len = gdjs.StoreCode.GDShineBlockTextObjects1.length ;i < len;++i) {
+    gdjs.StoreCode.GDShineBlockTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock").getAsNumber() / Math.pow(1000, Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock").getAsNumber(), 1)) / 3))) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.max(0, Math.floor(gdjs.evtTools.common.log10(Math.max(runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock").getAsNumber(), 1)) / 3))).getAsString());
 }
 }
 }
@@ -3341,21 +3666,28 @@ gdjs.copyArray(runtimeScene.getObjects("UpgradeTitleText"), gdjs.StoreCode.GDUpg
 {
 
 
-gdjs.StoreCode.eventsList9(runtimeScene);
+gdjs.StoreCode.eventsList11(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList14(runtimeScene);
+gdjs.StoreCode.eventsList12(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList25(runtimeScene);
+gdjs.StoreCode.eventsList17(runtimeScene);
+}
+
+
+{
+
+
+gdjs.StoreCode.eventsList28(runtimeScene);
 }
 
 
@@ -3449,6 +3781,31 @@ gdjs.StoreCode.GDdeletsavetext2Objects2.length = 0;
 gdjs.StoreCode.GDdeletsavetext2Objects3.length = 0;
 gdjs.StoreCode.GDdeletsavetext2Objects4.length = 0;
 gdjs.StoreCode.GDdeletsavetext2Objects5.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects1.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects2.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects3.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects4.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects5.length = 0;
+gdjs.StoreCode.GDoptionstextObjects1.length = 0;
+gdjs.StoreCode.GDoptionstextObjects2.length = 0;
+gdjs.StoreCode.GDoptionstextObjects3.length = 0;
+gdjs.StoreCode.GDoptionstextObjects4.length = 0;
+gdjs.StoreCode.GDoptionstextObjects5.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects1.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects2.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects3.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects4.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects5.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects1.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects2.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects3.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects4.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects5.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects1.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects2.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects3.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects4.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects5.length = 0;
 gdjs.StoreCode.GDMouseObjects1.length = 0;
 gdjs.StoreCode.GDMouseObjects2.length = 0;
 gdjs.StoreCode.GDMouseObjects3.length = 0;
@@ -3464,8 +3821,13 @@ gdjs.StoreCode.GDamethyst_9595shardObjects2.length = 0;
 gdjs.StoreCode.GDamethyst_9595shardObjects3.length = 0;
 gdjs.StoreCode.GDamethyst_9595shardObjects4.length = 0;
 gdjs.StoreCode.GDamethyst_9595shardObjects5.length = 0;
+gdjs.StoreCode.GDShineBlockObjects1.length = 0;
+gdjs.StoreCode.GDShineBlockObjects2.length = 0;
+gdjs.StoreCode.GDShineBlockObjects3.length = 0;
+gdjs.StoreCode.GDShineBlockObjects4.length = 0;
+gdjs.StoreCode.GDShineBlockObjects5.length = 0;
 
-gdjs.StoreCode.eventsList26(runtimeScene);
+gdjs.StoreCode.eventsList29(runtimeScene);
 gdjs.StoreCode.GDUpgradesButtonObjects1.length = 0;
 gdjs.StoreCode.GDUpgradesButtonObjects2.length = 0;
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
@@ -3551,6 +3913,31 @@ gdjs.StoreCode.GDdeletsavetext2Objects2.length = 0;
 gdjs.StoreCode.GDdeletsavetext2Objects3.length = 0;
 gdjs.StoreCode.GDdeletsavetext2Objects4.length = 0;
 gdjs.StoreCode.GDdeletsavetext2Objects5.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects1.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects2.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects3.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects4.length = 0;
+gdjs.StoreCode.GDOptionsWindow2Objects5.length = 0;
+gdjs.StoreCode.GDoptionstextObjects1.length = 0;
+gdjs.StoreCode.GDoptionstextObjects2.length = 0;
+gdjs.StoreCode.GDoptionstextObjects3.length = 0;
+gdjs.StoreCode.GDoptionstextObjects4.length = 0;
+gdjs.StoreCode.GDoptionstextObjects5.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects1.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects2.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects3.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects4.length = 0;
+gdjs.StoreCode.GDMusicSliderObjects5.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects1.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects2.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects3.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects4.length = 0;
+gdjs.StoreCode.GDEffectsSliderObjects5.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects1.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects2.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects3.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects4.length = 0;
+gdjs.StoreCode.GDShineBlockTextObjects5.length = 0;
 gdjs.StoreCode.GDMouseObjects1.length = 0;
 gdjs.StoreCode.GDMouseObjects2.length = 0;
 gdjs.StoreCode.GDMouseObjects3.length = 0;
@@ -3566,6 +3953,11 @@ gdjs.StoreCode.GDamethyst_9595shardObjects2.length = 0;
 gdjs.StoreCode.GDamethyst_9595shardObjects3.length = 0;
 gdjs.StoreCode.GDamethyst_9595shardObjects4.length = 0;
 gdjs.StoreCode.GDamethyst_9595shardObjects5.length = 0;
+gdjs.StoreCode.GDShineBlockObjects1.length = 0;
+gdjs.StoreCode.GDShineBlockObjects2.length = 0;
+gdjs.StoreCode.GDShineBlockObjects3.length = 0;
+gdjs.StoreCode.GDShineBlockObjects4.length = 0;
+gdjs.StoreCode.GDShineBlockObjects5.length = 0;
 
 
 return;

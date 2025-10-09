@@ -1,44 +1,31 @@
 
-if (typeof gdjs.evtsExt__PinchGesture__TransformToCanvasX !== "undefined") {
-  gdjs.evtsExt__PinchGesture__TransformToCanvasX.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition !== "undefined") {
+  gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasX = {};
+gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition = {};
 
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasX.userFunc0xde2558 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition.userFunc0x118e690 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
-const x = eventsFunctionContext.getArgument("PositionX");
-const y = eventsFunctionContext.getArgument("PositionY");
-const layer = runtimeScene.getLayer(eventsFunctionContext.getArgument("Layer"));
-
-eventsFunctionContext.returnValue = layer.convertInverseCoords(x, y)[0];
+const game = runtimeScene.getGame();
+eventsFunctionContext.returnValue = game.isInGameEdition && game.isInGameEdition();
 };
-gdjs.evtsExt__PinchGesture__TransformToCanvasX.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-gdjs.evtsExt__PinchGesture__TransformToCanvasX.userFunc0xde2558(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition.userFunc0x118e690(runtimeScene, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasX.func = function(runtimeScene, PositionX, PositionY, Layer, parentEventsFunctionContext) {
+gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition.func = function(runtimeScene, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
@@ -47,8 +34,8 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PinchGesture"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PinchGesture"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -88,19 +75,16 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "PositionX") return PositionX;
-if (argName === "PositionY") return PositionY;
-if (argName === "Layer") return Layer;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasX.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition.eventsList0(runtimeScene, eventsFunctionContext);
 
 
-return Number(eventsFunctionContext.returnValue) || 0;
+return !!eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__PinchGesture__TransformToCanvasX.registeredGdjsCallbacks = [];
+gdjs.evtsExt__PanelSpriteSlider__IsInGameEdition.registeredGdjsCallbacks = [];

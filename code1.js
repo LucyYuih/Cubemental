@@ -274,9 +274,17 @@ gdjs.copyArray(runtimeScene.getObjects("ShineBlockText"), gdjs.StoreCode.GDShine
 }
 
 
-};gdjs.StoreCode.eventsList3 = function(runtimeScene) {
+};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDIconsObjects2Objects = Hashtable.newFrom({"Icons": gdjs.StoreCode.GDIconsObjects2});
+gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
+gdjs.StoreCode.eventsList3 = function(runtimeScene) {
 
-};gdjs.StoreCode.eventsList4 = function(runtimeScene) {
+};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDIconsObjects2Objects = Hashtable.newFrom({"Icons": gdjs.StoreCode.GDIconsObjects2});
+gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
+gdjs.StoreCode.eventsList4 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList5 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -330,7 +338,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList5 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -349,7 +357,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList6 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -385,7 +393,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.StoreCode.localVariables);
 }
 gdjs.StoreCode.localVariables.length = 0;
 }
-gdjs.StoreCode.eventsList7 = function(runtimeScene) {
+gdjs.StoreCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -407,7 +415,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.StoreCode.localVariables);
 }
 gdjs.StoreCode.localVariables.length = 0;
 }
-gdjs.StoreCode.eventsList8 = function(runtimeScene) {
+gdjs.StoreCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -423,7 +431,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.StoreCode.eventsList9 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -451,7 +459,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.StoreCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList9(runtimeScene);} //End of subevents
 }
 
 }
@@ -483,7 +491,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.StoreCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList10(runtimeScene);} //End of subevents
 }
 
 }
@@ -569,7 +577,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList10 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -692,7 +700,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList11 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList13 = function(runtimeScene) {
 
 {
 
@@ -1169,23 +1177,23 @@ if (isConditionTrue_0) {
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
-gdjs.StoreCode.eventsList12 = function(runtimeScene) {
-
-};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
-gdjs.StoreCode.eventsList13 = function(runtimeScene) {
-
-};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
 gdjs.StoreCode.eventsList14 = function(runtimeScene) {
 
-};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
+};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
 gdjs.StoreCode.eventsList15 = function(runtimeScene) {
 
-};gdjs.StoreCode.eventsList16 = function(runtimeScene) {
+};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
+gdjs.StoreCode.eventsList16 = function(runtimeScene) {
+
+};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
+gdjs.StoreCode.eventsList17 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList18 = function(runtimeScene) {
 
 {
 
 
-gdjs.StoreCode.eventsList11(runtimeScene);
+gdjs.StoreCode.eventsList13(runtimeScene);
 }
 
 
@@ -1474,7 +1482,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList17 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -2025,7 +2033,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList18 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -2306,7 +2314,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList19 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList21 = function(runtimeScene) {
 
 {
 
@@ -2487,10 +2495,6 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList20 = function(runtimeScene) {
-
-};gdjs.StoreCode.eventsList21 = function(runtimeScene) {
-
 };gdjs.StoreCode.eventsList22 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList23 = function(runtimeScene) {
@@ -2506,6 +2510,10 @@ if (isConditionTrue_0) {
 };gdjs.StoreCode.eventsList28 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList29 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList30 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList31 = function(runtimeScene) {
 
 {
 
@@ -2581,7 +2589,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList17(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList19(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2660,7 +2668,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList18(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList20(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2739,7 +2747,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList19(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList21(runtimeScene);} //Subevents end.
 }
 }
 
@@ -3225,7 +3233,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList30 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -3547,6 +3555,88 @@ gdjs.StoreCode.eventsList2(runtimeScene);} //End of subevents
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Icons"), gdjs.StoreCode.GDIconsObjects1);
+
+for (gdjs.StoreCode.forEachIndex2 = 0;gdjs.StoreCode.forEachIndex2 < gdjs.StoreCode.GDIconsObjects1.length;++gdjs.StoreCode.forEachIndex2) {
+gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects2);
+gdjs.StoreCode.GDIconsObjects2.length = 0;
+
+
+gdjs.StoreCode.forEachTemporary2 = gdjs.StoreCode.GDIconsObjects1[gdjs.StoreCode.forEachIndex2];
+gdjs.StoreCode.GDIconsObjects2.push(gdjs.StoreCode.forEachTemporary2);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDIconsObjects2Objects, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects2.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects2[i].isVisible() ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects2[k] = gdjs.StoreCode.GDUpgradesButtonObjects2[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17977220);
+}
+}
+}
+if (isConditionTrue_0) {
+{for(var i = 0, len = gdjs.StoreCode.GDIconsObjects2.length ;i < len;++i) {
+    gdjs.StoreCode.GDIconsObjects2[i].getBehavior("Opacity").setOpacity(155);
+}
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Icons"), gdjs.StoreCode.GDIconsObjects1);
+
+for (gdjs.StoreCode.forEachIndex2 = 0;gdjs.StoreCode.forEachIndex2 < gdjs.StoreCode.GDIconsObjects1.length;++gdjs.StoreCode.forEachIndex2) {
+gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects2);
+gdjs.StoreCode.GDIconsObjects2.length = 0;
+
+
+gdjs.StoreCode.forEachTemporary2 = gdjs.StoreCode.GDIconsObjects1[gdjs.StoreCode.forEachIndex2];
+gdjs.StoreCode.GDIconsObjects2.push(gdjs.StoreCode.forEachTemporary2);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDIconsObjects2Objects, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects, false, runtimeScene, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects2.length;i<l;++i) {
+    if ( !(gdjs.StoreCode.GDUpgradesButtonObjects2[i].isVisible()) ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects2[k] = gdjs.StoreCode.GDUpgradesButtonObjects2[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20353244);
+}
+}
+}
+if (isConditionTrue_0) {
+{for(var i = 0, len = gdjs.StoreCode.GDIconsObjects2.length ;i < len;++i) {
+    gdjs.StoreCode.GDIconsObjects2[i].getBehavior("Opacity").setOpacity(0);
+}
+}
+}
+}
+
+}
+
+
+{
+
 
 
 }
@@ -3609,7 +3699,7 @@ let isConditionTrue_0 = false;
 if (true) {
 
 { //Subevents: 
-gdjs.StoreCode.eventsList4(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList6(runtimeScene);} //Subevents end.
 }
 }
 
@@ -3656,7 +3746,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents
-gdjs.StoreCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
@@ -3679,7 +3769,7 @@ gdjs.StoreCode.GDCursor_95953Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.StoreCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 }
@@ -3852,28 +3942,28 @@ gdjs.copyArray(runtimeScene.getObjects("UpgradeTitleText"), gdjs.StoreCode.GDUpg
 {
 
 
-gdjs.StoreCode.eventsList9(runtimeScene);
+gdjs.StoreCode.eventsList11(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList10(runtimeScene);
+gdjs.StoreCode.eventsList12(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList16(runtimeScene);
+gdjs.StoreCode.eventsList18(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList29(runtimeScene);
+gdjs.StoreCode.eventsList31(runtimeScene);
 }
 
 
@@ -4013,7 +4103,7 @@ gdjs.StoreCode.GDShineBlockObjects3.length = 0;
 gdjs.StoreCode.GDShineBlockObjects4.length = 0;
 gdjs.StoreCode.GDShineBlockObjects5.length = 0;
 
-gdjs.StoreCode.eventsList30(runtimeScene);
+gdjs.StoreCode.eventsList32(runtimeScene);
 gdjs.StoreCode.GDUpgradesButtonObjects1.length = 0;
 gdjs.StoreCode.GDUpgradesButtonObjects2.length = 0;
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;

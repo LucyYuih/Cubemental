@@ -154,7 +154,6 @@ gdjs.StoreCode.GDShineBlockObjects5= [];
 
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1ObjectsGDgdjs_9546StoreCode_9546GDMusicSliderObjects1ObjectsGDgdjs_9546StoreCode_9546GDEffectsSliderObjects1Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects1, "Play": gdjs.StoreCode.GDPlayObjects1, "ConfigButton": gdjs.StoreCode.GDConfigButtonObjects1, "Exclamation_Mark": gdjs.StoreCode.GDExclamation_9595MarkObjects1, "Cursor_3": gdjs.StoreCode.GDCursor_95953Objects1, "MusicSlider": gdjs.StoreCode.GDMusicSliderObjects1, "EffectsSlider": gdjs.StoreCode.GDEffectsSliderObjects1});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDPlayObjects1ObjectsGDgdjs_9546StoreCode_9546GDConfigButtonObjects1ObjectsGDgdjs_9546StoreCode_9546GDExclamation_95959595MarkObjects1ObjectsGDgdjs_9546StoreCode_9546GDCursor_959595953Objects1ObjectsGDgdjs_9546StoreCode_9546GDMusicSliderObjects1ObjectsGDgdjs_9546StoreCode_9546GDEffectsSliderObjects1Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects1, "Play": gdjs.StoreCode.GDPlayObjects1, "ConfigButton": gdjs.StoreCode.GDConfigButtonObjects1, "Exclamation_Mark": gdjs.StoreCode.GDExclamation_9595MarkObjects1, "Cursor_3": gdjs.StoreCode.GDCursor_95953Objects1, "MusicSlider": gdjs.StoreCode.GDMusicSliderObjects1, "EffectsSlider": gdjs.StoreCode.GDEffectsSliderObjects1});
-gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDdeletsavetext2Objects3Objects = Hashtable.newFrom({"deletsavetext2": gdjs.StoreCode.GDdeletsavetext2Objects3});
 gdjs.StoreCode.eventsList0 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList1 = function(runtimeScene) {
@@ -167,8 +166,6 @@ gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects1, gdjs.StoreCode.GDUpgrade
 
 
 for (gdjs.StoreCode.forEachIndex3 = 0;gdjs.StoreCode.forEachIndex3 < gdjs.StoreCode.GDUpgradesButtonObjects2.length;++gdjs.StoreCode.forEachIndex3) {
-gdjs.StoreCode.GDdeletsavetext2Objects3.length = 0;
-
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
 
 
@@ -179,8 +176,6 @@ if (true) {
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
     gdjs.StoreCode.GDUpgradesButtonObjects3[i].hide();
 }
-}
-{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDdeletsavetext2Objects3Objects, (( gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? 0 :gdjs.StoreCode.GDUpgradesButtonObjects3[0].getPointX("")), (( gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? 0 :gdjs.StoreCode.GDUpgradesButtonObjects3[0].getPointY("")), "");
 }
 }
 }
@@ -279,17 +274,9 @@ gdjs.copyArray(runtimeScene.getObjects("ShineBlockText"), gdjs.StoreCode.GDShine
 }
 
 
-};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDIconsObjects2Objects = Hashtable.newFrom({"Icons": gdjs.StoreCode.GDIconsObjects2});
-gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
-gdjs.StoreCode.eventsList3 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList3 = function(runtimeScene) {
 
-};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDdeletsavetext2Objects2Objects = Hashtable.newFrom({"deletsavetext2": gdjs.StoreCode.GDdeletsavetext2Objects2});
-gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
-gdjs.StoreCode.eventsList4 = function(runtimeScene) {
-
-};gdjs.StoreCode.eventsList5 = function(runtimeScene) {
-
-};gdjs.StoreCode.eventsList6 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -343,7 +330,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList7 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -362,7 +349,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList8 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -398,7 +385,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.StoreCode.localVariables);
 }
 gdjs.StoreCode.localVariables.length = 0;
 }
-gdjs.StoreCode.eventsList9 = function(runtimeScene) {
+gdjs.StoreCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -420,7 +407,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.StoreCode.localVariables);
 }
 gdjs.StoreCode.localVariables.length = 0;
 }
-gdjs.StoreCode.eventsList10 = function(runtimeScene) {
+gdjs.StoreCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -436,7 +423,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.StoreCode.eventsList11 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -464,7 +451,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.StoreCode.eventsList9(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
@@ -496,7 +483,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.StoreCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 }
@@ -582,7 +569,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList12 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -705,7 +692,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList13 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -1126,11 +1113,31 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9587788);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18380116);
 }
 }
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(3).getChild(35).setBoolean(true);
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getChild(33).getAsNumber() >= 1);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9587788);
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(3).getChild(38).setBoolean(true);
 }
 }
 
@@ -1162,20 +1169,23 @@ if (isConditionTrue_0) {
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
 gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
-gdjs.StoreCode.eventsList14 = function(runtimeScene) {
+gdjs.StoreCode.eventsList12 = function(runtimeScene) {
 
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
-gdjs.StoreCode.eventsList15 = function(runtimeScene) {
+gdjs.StoreCode.eventsList13 = function(runtimeScene) {
+
+};gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects3});
+gdjs.StoreCode.eventsList14 = function(runtimeScene) {
 
 };gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects = Hashtable.newFrom({"UpgradesButton": gdjs.StoreCode.GDUpgradesButtonObjects2});
-gdjs.StoreCode.eventsList16 = function(runtimeScene) {
+gdjs.StoreCode.eventsList15 = function(runtimeScene) {
 
-};gdjs.StoreCode.eventsList17 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList16 = function(runtimeScene) {
 
 {
 
 
-gdjs.StoreCode.eventsList13(runtimeScene);
+gdjs.StoreCode.eventsList11(runtimeScene);
 }
 
 
@@ -1374,6 +1384,52 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects2);
+
+for (gdjs.StoreCode.forEachIndex3 = 0;gdjs.StoreCode.forEachIndex3 < gdjs.StoreCode.GDUpgradesButtonObjects2.length;++gdjs.StoreCode.forEachIndex3) {
+gdjs.copyArray(runtimeScene.getObjects("UpgradeDescText"), gdjs.StoreCode.GDUpgradeDescTextObjects3);
+gdjs.copyArray(runtimeScene.getObjects("UpgradeTitleText"), gdjs.StoreCode.GDUpgradeTitleTextObjects3);
+gdjs.copyArray(runtimeScene.getObjects("UpgradedText"), gdjs.StoreCode.GDUpgradedTextObjects3);
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
+
+
+gdjs.StoreCode.forEachTemporary3 = gdjs.StoreCode.GDUpgradesButtonObjects2[gdjs.StoreCode.forEachIndex3];
+gdjs.StoreCode.GDUpgradesButtonObjects3.push(gdjs.StoreCode.forEachTemporary3);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects3Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariableString(gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariables().getFromIndex(2)) == "Amethyst" ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects3[k] = gdjs.StoreCode.GDUpgradesButtonObjects3[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
+}
+if (isConditionTrue_0) {
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeTitleTextObjects3.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradeTitleTextObjects3[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(8).getChild("Title").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
+}
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradeDescTextObjects3.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradeDescTextObjects3[i].getBehavior("Text").setText(runtimeScene.getScene().getVariables().getFromIndex(8).getChild("Description").getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
+}
+}
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects3.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradedTextObjects3[i].getBehavior("Text").setText("A " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
+}
+}
+}
+}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects1);
 
 for (gdjs.StoreCode.forEachIndex2 = 0;gdjs.StoreCode.forEachIndex2 < gdjs.StoreCode.GDUpgradesButtonObjects1.length;++gdjs.StoreCode.forEachIndex2) {
@@ -1391,7 +1447,7 @@ isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.StoreCode.mapOfGDgdj
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects2.length;i<l;++i) {
-    if ( gdjs.StoreCode.GDUpgradesButtonObjects2[i].getVariableString(gdjs.StoreCode.GDUpgradesButtonObjects2[i].getVariables().getFromIndex(2)) == "Amethyst" ) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects2[i].getVariableString(gdjs.StoreCode.GDUpgradesButtonObjects2[i].getVariables().getFromIndex(2)) == "Shiny" ) {
         isConditionTrue_0 = true;
         gdjs.StoreCode.GDUpgradesButtonObjects2[k] = gdjs.StoreCode.GDUpgradesButtonObjects2[i];
         ++k;
@@ -1409,7 +1465,7 @@ if (isConditionTrue_0) {
 }
 }
 {for(var i = 0, len = gdjs.StoreCode.GDUpgradedTextObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDUpgradedTextObjects2[i].getBehavior("Text").setText("A " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
+    gdjs.StoreCode.GDUpgradedTextObjects2[i].getBehavior("Text").setText("S " + gdjs.evtTools.common.toString(gdjs.evtTools.common.roundTo(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() / Math.pow(1000, Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)) * 100, 0) / 100) + runtimeScene.getGame().getVariables().getFromIndex(11).getChild(Math.floor(gdjs.evtTools.common.log10(runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber()) / 3)).getAsString() + " - " + runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString() + " / " + runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsNumber()).getAsString());
 }
 }
 }
@@ -1418,7 +1474,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList18 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList17 = function(runtimeScene) {
 
 {
 
@@ -1969,7 +2025,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList19 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -2250,7 +2306,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList20 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -2381,6 +2437,58 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) == 36 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst_Max").add(1);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Amethyst_Max", runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst_Max").getAsNumber());
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects4.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariableNumber(gdjs.StoreCode.GDUpgradesButtonObjects4[i].getVariables().getFromIndex(1)) == 37 ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects4[k] = gdjs.StoreCode.GDUpgradesButtonObjects4[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects4.length = k;
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Multiplier").add(0.1);
+}
+{gdjs.evtTools.storage.writeNumberInJSONFile("Player", "Damage_Multiplier", runtimeScene.getGame().getVariables().getFromIndex(4).getChild("Multiplier").getAsNumber());
+}
+}
+
+}
+
+
+};gdjs.StoreCode.eventsList20 = function(runtimeScene) {
+
 };gdjs.StoreCode.eventsList21 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList22 = function(runtimeScene) {
@@ -2396,6 +2504,8 @@ if (isConditionTrue_0) {
 };gdjs.StoreCode.eventsList27 = function(runtimeScene) {
 
 };gdjs.StoreCode.eventsList28 = function(runtimeScene) {
+
+};gdjs.StoreCode.eventsList29 = function(runtimeScene) {
 
 {
 
@@ -2471,7 +2581,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList18(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList17(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2550,7 +2660,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList19(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList18(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2629,7 +2739,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents: 
-gdjs.StoreCode.eventsList20(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList19(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2987,6 +3097,114 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects2);
+
+for (gdjs.StoreCode.forEachIndex3 = 0;gdjs.StoreCode.forEachIndex3 < gdjs.StoreCode.GDUpgradesButtonObjects2.length;++gdjs.StoreCode.forEachIndex3) {
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
+
+
+gdjs.StoreCode.forEachTemporary3 = gdjs.StoreCode.GDUpgradesButtonObjects2[gdjs.StoreCode.forEachIndex3];
+gdjs.StoreCode.GDUpgradesButtonObjects3.push(gdjs.StoreCode.forEachTemporary3);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{gdjs.StoreCode.GDUpgradesButtonObjects3_1final.length = 0;
+let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects4[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() > runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock").getAsNumber());
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.StoreCode.GDUpgradesButtonObjects4.length; j < jLen ; ++j) {
+        if ( gdjs.StoreCode.GDUpgradesButtonObjects3_1final.indexOf(gdjs.StoreCode.GDUpgradesButtonObjects4[j]) === -1 )
+            gdjs.StoreCode.GDUpgradesButtonObjects3_1final.push(gdjs.StoreCode.GDUpgradesButtonObjects4[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3, gdjs.StoreCode.GDUpgradesButtonObjects4);
+
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects4[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() == runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects4.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects4[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.StoreCode.GDUpgradesButtonObjects4.length; j < jLen ; ++j) {
+        if ( gdjs.StoreCode.GDUpgradesButtonObjects3_1final.indexOf(gdjs.StoreCode.GDUpgradesButtonObjects4[j]) === -1 )
+            gdjs.StoreCode.GDUpgradesButtonObjects3_1final.push(gdjs.StoreCode.GDUpgradesButtonObjects4[j]);
+    }
+}
+}
+{
+gdjs.copyArray(gdjs.StoreCode.GDUpgradesButtonObjects3_1final, gdjs.StoreCode.GDUpgradesButtonObjects3);
+}
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariableString(gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariables().getFromIndex(2)) == "Shiny" ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects3[k] = gdjs.StoreCode.GDUpgradesButtonObjects3[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
+}
+if (isConditionTrue_0) {
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 0.9);
+}
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects2);
+
+for (gdjs.StoreCode.forEachIndex3 = 0;gdjs.StoreCode.forEachIndex3 < gdjs.StoreCode.GDUpgradesButtonObjects2.length;++gdjs.StoreCode.forEachIndex3) {
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
+
+
+gdjs.StoreCode.forEachTemporary3 = gdjs.StoreCode.GDUpgradesButtonObjects2[gdjs.StoreCode.forEachIndex3];
+gdjs.StoreCode.GDUpgradesButtonObjects3.push(gdjs.StoreCode.forEachTemporary3);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() <= runtimeScene.getGame().getVariables().getFromIndex(3).getChild("ShinyBlock").getAsNumber());
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber() != runtimeScene.getScene().getVariables().getFromIndex(6).getChild(((gdjs.StoreCode.GDUpgradesButtonObjects3.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects3[0].getVariables()).getFromIndex(1).getAsNumber()).getAsNumber());
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.StoreCode.GDUpgradesButtonObjects3.length;i<l;++i) {
+    if ( gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariableString(gdjs.StoreCode.GDUpgradesButtonObjects3[i].getVariables().getFromIndex(2)) == "Shiny" ) {
+        isConditionTrue_0 = true;
+        gdjs.StoreCode.GDUpgradesButtonObjects3[k] = gdjs.StoreCode.GDUpgradesButtonObjects3[i];
+        ++k;
+    }
+}
+gdjs.StoreCode.GDUpgradesButtonObjects3.length = k;
+}
+}
+if (isConditionTrue_0) {
+{for(var i = 0, len = gdjs.StoreCode.GDUpgradesButtonObjects3.length ;i < len;++i) {
+    gdjs.StoreCode.GDUpgradesButtonObjects3[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "brightness", 1.5);
+}
+}
+}
+}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("Play"), gdjs.StoreCode.GDPlayObjects1);
 
 let isConditionTrue_0 = false;
@@ -3007,7 +3225,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.StoreCode.eventsList29 = function(runtimeScene) {
+};gdjs.StoreCode.eventsList30 = function(runtimeScene) {
 
 {
 
@@ -3094,6 +3312,10 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.storage.readNumberFromJSONFile("Player", "ShinyBlock_Unlock", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("ShinyBlock_Unlock"));
 }
 {gdjs.evtTools.storage.readNumberFromJSONFile("Player", "GameLevel_Max", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Max"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "Amethyst_Max", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(6).getChild("Amethyst_Max"));
+}
+{gdjs.evtTools.storage.readNumberFromJSONFile("Player", "GameLevel_Actual", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1).getChild("Actual"));
 }
 }
 
@@ -3325,50 +3547,14 @@ gdjs.StoreCode.eventsList2(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Icons"), gdjs.StoreCode.GDIconsObjects1);
 
-for (gdjs.StoreCode.forEachIndex2 = 0;gdjs.StoreCode.forEachIndex2 < gdjs.StoreCode.GDIconsObjects1.length;++gdjs.StoreCode.forEachIndex2) {
-gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects2);
-gdjs.StoreCode.GDIconsObjects2.length = 0;
-
-
-gdjs.StoreCode.forEachTemporary2 = gdjs.StoreCode.GDIconsObjects1[gdjs.StoreCode.forEachIndex2];
-gdjs.StoreCode.GDIconsObjects2.push(gdjs.StoreCode.forEachTemporary2);
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDIconsObjects2Objects, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-{for(var i = 0, len = gdjs.StoreCode.GDIconsObjects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDIconsObjects2[i].setCenterPositionInScene((( gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? 0 :gdjs.StoreCode.GDUpgradesButtonObjects2[0].getCenterXInScene()),(( gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? 0 :gdjs.StoreCode.GDUpgradesButtonObjects2[0].getCenterYInScene()));
-}
-}
-}
-}
 
 }
 
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("deletsavetext2"), gdjs.StoreCode.GDdeletsavetext2Objects1);
 
-for (gdjs.StoreCode.forEachIndex2 = 0;gdjs.StoreCode.forEachIndex2 < gdjs.StoreCode.GDdeletsavetext2Objects1.length;++gdjs.StoreCode.forEachIndex2) {
-gdjs.copyArray(runtimeScene.getObjects("UpgradesButton"), gdjs.StoreCode.GDUpgradesButtonObjects2);
-gdjs.StoreCode.GDdeletsavetext2Objects2.length = 0;
-
-
-gdjs.StoreCode.forEachTemporary2 = gdjs.StoreCode.GDdeletsavetext2Objects1[gdjs.StoreCode.forEachIndex2];
-gdjs.StoreCode.GDdeletsavetext2Objects2.push(gdjs.StoreCode.forEachTemporary2);
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDdeletsavetext2Objects2Objects, gdjs.StoreCode.mapOfGDgdjs_9546StoreCode_9546GDUpgradesButtonObjects2Objects, false, runtimeScene, false);
-if (isConditionTrue_0) {
-{for(var i = 0, len = gdjs.StoreCode.GDdeletsavetext2Objects2.length ;i < len;++i) {
-    gdjs.StoreCode.GDdeletsavetext2Objects2[i].getBehavior("Text").setText(((gdjs.StoreCode.GDUpgradesButtonObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.StoreCode.GDUpgradesButtonObjects2[0].getVariables()).getFromIndex(1).getAsString());
-}
-}
-}
-}
 
 }
 
@@ -3423,7 +3609,7 @@ let isConditionTrue_0 = false;
 if (true) {
 
 { //Subevents: 
-gdjs.StoreCode.eventsList6(runtimeScene);} //Subevents end.
+gdjs.StoreCode.eventsList4(runtimeScene);} //Subevents end.
 }
 }
 
@@ -3470,7 +3656,7 @@ if (isConditionTrue_0) {
 }
 
 { //Subevents
-gdjs.StoreCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -3493,7 +3679,7 @@ gdjs.StoreCode.GDCursor_95953Objects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.StoreCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.StoreCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
@@ -3666,28 +3852,28 @@ gdjs.copyArray(runtimeScene.getObjects("UpgradeTitleText"), gdjs.StoreCode.GDUpg
 {
 
 
-gdjs.StoreCode.eventsList11(runtimeScene);
+gdjs.StoreCode.eventsList9(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList12(runtimeScene);
+gdjs.StoreCode.eventsList10(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList17(runtimeScene);
+gdjs.StoreCode.eventsList16(runtimeScene);
 }
 
 
 {
 
 
-gdjs.StoreCode.eventsList28(runtimeScene);
+gdjs.StoreCode.eventsList29(runtimeScene);
 }
 
 
@@ -3827,7 +4013,7 @@ gdjs.StoreCode.GDShineBlockObjects3.length = 0;
 gdjs.StoreCode.GDShineBlockObjects4.length = 0;
 gdjs.StoreCode.GDShineBlockObjects5.length = 0;
 
-gdjs.StoreCode.eventsList29(runtimeScene);
+gdjs.StoreCode.eventsList30(runtimeScene);
 gdjs.StoreCode.GDUpgradesButtonObjects1.length = 0;
 gdjs.StoreCode.GDUpgradesButtonObjects2.length = 0;
 gdjs.StoreCode.GDUpgradesButtonObjects3.length = 0;
